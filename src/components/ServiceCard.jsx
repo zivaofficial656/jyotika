@@ -11,6 +11,8 @@ export default function ServiceCard({ service, onBookNow }) {
           alt={`${service.name} at Jyotika Spa Thane`}
           className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
           loading="lazy"
+          width="480"
+          height="300"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#40352E]/30 via-transparent to-transparent opacity-60 group-hover:opacity-20 transition-opacity" />
       </div>

@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { Menu, X, Calendar, Phone } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/businessInfo';
 import JyotikaLogo from './JyotikaLogo';
+import { trackCallClick } from '../utils/analytics';
 
 export default function Navbar({ onOpenBooking }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -92,8 +93,9 @@ export default function Navbar({ onOpenBooking }) {
             {BUSINESS_INFO.contact.phoneTel && (
               <a
                 href={BUSINESS_INFO.contact.phoneTel}
+                onClick={() => trackCallClick('navbar_desktop')}
                 className="inline-flex items-center justify-center px-4 py-2 text-xs tracking-[0.14em] uppercase font-medium text-[#40352E] hover:text-[#B77A60] border border-[#E8DFD1] hover:border-[#B77A60] transition-all bg-white/70 rounded-xs shadow-2xs"
-                title={`Call desk: ${BUSINESS_INFO.contact.phoneDisplay}`}
+                title={`Call desk: ${BUSINESS_INFO.contact.displayPhone}`}
               >
                 <Phone className="w-3.5 h-3.5 mr-1.5 text-[#B77A60]" />
                 <span>Call Desk</span>
@@ -115,8 +117,9 @@ export default function Navbar({ onOpenBooking }) {
             {BUSINESS_INFO.contact.phoneTel && (
               <a
                 href={BUSINESS_INFO.contact.phoneTel}
+                onClick={() => trackCallClick('navbar_mobile')}
                 className="p-2 text-[#40352E] bg-white border border-[#E8DFD1] rounded-xs hover:border-[#B77A60]"
-                aria-label={`Call ${BUSINESS_INFO.contact.phoneRaw}`}
+                aria-label={`Call ${BUSINESS_INFO.contact.displayPhone}`}
               >
                 <Phone className="w-4 h-4 text-[#B77A60]" />
               </a>
@@ -166,10 +169,11 @@ export default function Navbar({ onOpenBooking }) {
               {BUSINESS_INFO.contact.phoneTel && (
                 <a
                   href={BUSINESS_INFO.contact.phoneTel}
+                  onClick={() => trackCallClick('navbar_drawer')}
                   className="w-full flex items-center justify-center px-4 py-3 text-xs tracking-[0.16em] uppercase font-medium text-[#40352E] bg-white border border-[#E8DFD1] rounded-xs"
                 >
                   <Phone className="w-4 h-4 mr-2 text-[#B77A60]" />
-                  Call {BUSINESS_INFO.contact.phoneDisplay}
+                  Call {BUSINESS_INFO.contact.displayPhone}
                 </a>
               )}
               <button

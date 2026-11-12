@@ -13,6 +13,7 @@ import {
 import { BUSINESS_INFO } from '../data/businessInfo';
 import { SERVICES } from '../data/servicesData';
 import JyotikaLogo from './JyotikaLogo';
+import { trackCallClick, trackWhatsAppClick, trackContactSubmission } from '../utils/analytics';
 
 export default function Contact({ onOpenBooking }) {
   const [formData, setFormData] = useState({
@@ -32,6 +33,7 @@ export default function Contact({ onOpenBooking }) {
     if (!formData.name.trim() || (!formData.phone.trim() && !formData.email.trim())) {
       return;
     }
+    trackContactSubmission();
     setSubmitted(true);
   };
 
@@ -48,9 +50,10 @@ export default function Contact({ onOpenBooking }) {
     });
   };
 
-  const whatsappUrl = `https://wa.me/91${BUSINESS_INFO.contact.phoneRaw}?text=${encodeURIComponent(
-    'Hello Jyotika Spa Thane, I would like to inquire about a spa appointment.'
-  )}`;
+  const prefilledMessage = encodeURIComponent(
+    'Hello Jyotika Spa, I would like to know more about your spa services and booking availability.'
+  );
+  const whatsappUrl = `https://wa.me/${BUSINESS_INFO.contact.whatsapp}?text=${prefilledMessage}`;
 
   return (
     <section id="contact" className="py-20 md:py-28 bg-[#FAF9F6] border-t border-[#E8DFD1]">
@@ -107,10 +110,10 @@ export default function Contact({ onOpenBooking }) {
                         href={BUSINESS_INFO.contact.phoneTel}
                         className="font-medium text-[#40352E] hover:text-[#B77A60] transition-colors block text-sm mt-0.5 tracking-wide"
                       >
-                        {BUSINESS_INFO.contact.phoneDisplay}
+                        {BUSINESS_INFO.contact.displayPhone}
                       </a>
                     ) : (
-                      <p className="italic text-[#777B57]">{BUSINESS_INFO.contact.phoneDisplay}</p>
+                      <p className="italic text-[#777B57]">{BUSINESS_INFO.contact.displayPhone}</p>
                     )}
                   </div>
                 </div>
@@ -147,6 +150,7 @@ export default function Contact({ onOpenBooking }) {
                 {BUSINESS_INFO.contact.phoneTel && (
                   <a
                     href={BUSINESS_INFO.contact.phoneTel}
+                    onClick={() => trackCallClick('contact_page')}
                     className="inline-flex items-center px-4 py-2.5 text-xs tracking-wider uppercase font-medium text-white bg-[#40352E] hover:bg-[#B77A60] transition-colors rounded-xs shadow-2xs border border-[#40352E]"
                   >
                     <Phone className="w-3.5 h-3.5 mr-2 text-[#E8DFD1]" />
@@ -166,6 +170,7 @@ export default function Contact({ onOpenBooking }) {
 
                 <a
                   href={whatsappUrl}
+                  onClick={() => trackWhatsAppClick('contact_page')}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2.5 text-xs tracking-wider uppercase font-medium text-white bg-[#25D366] hover:bg-[#20bd5a] transition-colors rounded-xs"

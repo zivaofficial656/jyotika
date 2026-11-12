@@ -12,6 +12,9 @@ export default function FinalBookingCTA({ onOpenBooking }) {
           src={HERO_IMAGES.main}
           alt="Jyotika Spa Thane Ambiance"
           className="w-full h-full object-cover"
+          loading="lazy"
+          width="1200"
+          height="600"
         />
       </div>
 

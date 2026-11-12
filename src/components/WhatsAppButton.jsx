@@ -2,9 +2,10 @@ import { MessageCircle } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/businessInfo';
 
 export default function WhatsAppButton() {
-  const whatsappUrl = `https://wa.me/91${BUSINESS_INFO.contact.phoneRaw}?text=${encodeURIComponent(
-    'Hello Jyotika Spa, I would like to inquire about reserving a spa appointment.'
-  )}`;
+  const prefilledMessage = encodeURIComponent(
+    'Hello Jyotika Spa, I would like to know more about your spa services and booking availability.'
+  );
+  const whatsappUrl = `https://wa.me/${BUSINESS_INFO.contact.whatsapp}?text=${prefilledMessage}`;
 
   return (
     <a

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { X, Calendar, CheckCircle2, Phone } from 'lucide-react';
 import { SERVICES } from '../data/servicesData';
 import { BUSINESS_INFO } from '../data/businessInfo';
+import { trackBookingSubmission } from '../utils/analytics';
 import JyotikaLogo from './JyotikaLogo';
 
 export default function BookingModal({ isOpen, onClose, initialService = null }) {
@@ -53,6 +54,7 @@ export default function BookingModal({ isOpen, onClose, initialService = null })
     if (!formData.name.trim() || (!formData.phone.trim() && !formData.email.trim())) {
       return;
     }
+    trackBookingSubmission(formData.service);
     setSubmitted(true);
   };
 
@@ -262,7 +264,7 @@ export default function BookingModal({ isOpen, onClose, initialService = null })
                     className="inline-flex items-center text-xs font-medium text-[#40352E] hover:text-[#B77A60] mt-0.5"
                   >
                     <Phone className="w-3 h-3 mr-1 text-[#B77A60]" />
-                    {BUSINESS_INFO.contact.phoneDisplay}
+                    {BUSINESS_INFO.contact.displayPhone}
                   </a>
                 </div>
               )}

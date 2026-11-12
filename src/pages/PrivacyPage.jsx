@@ -59,7 +59,7 @@ export default function PrivacyPage() {
               <a href={`mailto:${BUSINESS_INFO.contact.email}`} className="text-[#B77A60] underline">
                 {BUSINESS_INFO.contact.email}
               </a>{' '}
-              or speak with our front desk team at {BUSINESS_INFO.contact.phoneDisplay}.
+              or speak with our front desk team at {BUSINESS_INFO.contact.displayPhone}.
             </p>
           </section>
 

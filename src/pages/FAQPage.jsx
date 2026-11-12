@@ -29,10 +29,10 @@ export default function FAQPage() {
     setOpenIndex(openIndex === index ? -1 : index);
   };
 
-  const whatsappMessage = encodeURIComponent(
-    `Hello Jyotika Spa (Thane), I have an inquiry regarding your treatments and availability.`
+  const prefilledMessage = encodeURIComponent(
+    'Hello Jyotika Spa, I would like to know more about your spa services and booking availability.'
   );
-  const whatsappUrl = `https://wa.me/91${BUSINESS_INFO.contact.phoneRaw}?text=${whatsappMessage}`;
+  const whatsappUrl = `https://wa.me/${BUSINESS_INFO.contact.whatsapp}?text=${prefilledMessage}`;
 
   return (
     <main className="flex-grow pt-28 pb-20 bg-[#FAF9F6]">

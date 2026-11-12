@@ -57,6 +57,8 @@ export default function About() {
                   alt="Jyotika Spa contemporary boutique interior and serene massage room in Thane"
                   className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
                   loading="lazy"
+                  width="600"
+                  height="450"
                 />
               </div>
               <div className="p-4 bg-[#F1EADF]/40 border-t border-[#E8DFD1] flex items-center justify-between text-xs text-[#5A4E46]">

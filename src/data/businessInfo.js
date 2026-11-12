@@ -3,6 +3,7 @@
 
 export const BUSINESS_INFO = {
   name: "Jyotika Spa",
+  website: "https://jyotika.online",
   tagline: "Where Your Wellbeing Finds Its Balance",
   shortDescription: "Experience contemporary boutique wellness at Jyotika Spa in Thane. Offering restorative full body massages, bespoke couple rituals, and holistic therapy in an unhurried, welcoming haven at Ashar Tiara Commercial Complex.",
   
@@ -18,14 +19,23 @@ export const BUSINESS_INFO = {
     full: "1st Floor, Ashar Tiara Commercial Complex, Shop No. 14–17, Gandhi Nagar, Thane, Maharashtra 400601, India"
   },
 
+  // Verified Geo Coordinates for Ashar Tiara Commercial Complex, Thane
+  geo: {
+    latitude: 19.190539,
+    longitude: 72.964500
+  },
+
   // Contact Information
   contact: {
-    phone: "+91 80926 31411",
-    phoneRaw: "8092631411",
-    phoneTel: "tel:+918092631411",
-    phoneDisplay: "+91 80926 31411",
-    email: "concierge@jyotikaspa.com",
-    emailDisplay: "concierge@jyotikaspa.com",
+    phone: "+919203824656",
+    displayPhone: "+91 9203824656",
+    whatsapp: "919203824656",
+    phoneDisplay: "+91 9203824656",
+    phoneRaw: "9203824656",
+    phoneTel: "tel:+919203824656",
+    whatsappUrl: "https://wa.me/919203824656",
+    email: "concierge@jyotika.online",
+    emailDisplay: "concierge@jyotika.online",
     appointmentNotice: "Appointments can be requested directly via phone, WhatsApp, or our online booking form."
   },
 

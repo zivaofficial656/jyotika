@@ -1,12 +1,13 @@
 import { Phone } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/businessInfo';
+import { trackCallClick, trackWhatsAppClick } from '../utils/analytics';
 
 export default function FloatingContactButtons() {
   const prefilledMessage = encodeURIComponent(
     'Hello Jyotika Spa, I would like to know more about your spa services and booking availability.'
   );
-  const whatsappUrl = `https://wa.me/91${BUSINESS_INFO.contact.phoneRaw}?text=${prefilledMessage}`;
-  const phoneTel = BUSINESS_INFO.contact.phoneTel || `tel:+91${BUSINESS_INFO.contact.phoneRaw}`;
+  const whatsappUrl = `https://wa.me/${BUSINESS_INFO.contact.whatsapp}?text=${prefilledMessage}`;
+  const phoneTel = BUSINESS_INFO.contact.phoneTel || `tel:${BUSINESS_INFO.contact.phone}`;
 
   return (
     <aside
@@ -20,17 +21,18 @@ export default function FloatingContactButtons() {
           role="tooltip"
           className="hidden sm:inline-flex items-center px-3 py-1.5 mr-2.5 bg-[#40352E] text-white text-xs font-medium tracking-wide rounded-md shadow-md border border-[#E8DFD1]/20 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0 pointer-events-none"
         >
-          Call Now • {BUSINESS_INFO.contact.phoneDisplay}
+          Call Now • {BUSINESS_INFO.contact.displayPhone}
         </span>
 
         <a
           href={phoneTel}
+          onClick={() => trackCallClick('floating_button')}
           aria-label="Call Now"
           title="Call Now"
           className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#B77A60] hover:bg-[#a3674f] text-white flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-110 active:scale-95 focus:outline-none focus:ring-3 focus:ring-[#B77A60]/50 border-2 border-white/90 cursor-pointer animate-call-pulse"
         >
           <Phone className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.2] transition-transform group-hover:rotate-12" />
-          <span className="sr-only">Call Jyotika Spa at {BUSINESS_INFO.contact.phoneDisplay}</span>
+          <span className="sr-only">Call Jyotika Spa at {BUSINESS_INFO.contact.displayPhone}</span>
         </a>
       </div>
 
@@ -46,6 +48,7 @@ export default function FloatingContactButtons() {
 
         <a
           href={whatsappUrl}
+          onClick={() => trackWhatsAppClick('floating_button')}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat on WhatsApp"

@@ -170,7 +170,7 @@ export default function TreatmentDetailPage({ onOpenBooking }) {
             <div className="bg-[#40352E] text-white p-8 rounded-sm shadow-md space-y-3">
               <h4 className="font-serif text-xl text-[#FAF9F6]">Reserve This Therapy</h4>
               <p className="text-xs text-[#E8DFD1] font-light">
-                Call our concierge directly at {BUSINESS_INFO.contact.phoneDisplay} or submit an online booking inquiry.
+                Call our concierge directly at {BUSINESS_INFO.contact.displayPhone} or submit an online booking inquiry.
               </p>
               <div className="pt-2">
                 <button

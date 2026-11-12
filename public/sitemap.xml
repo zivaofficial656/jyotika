@@ -1,102 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.jyotikaspa.com/</loc>
+    <loc>https://jyotika.online/</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/about</loc>
+    <loc>https://jyotika.online/about</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/services</loc>
+    <loc>https://jyotika.online/services</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/experience</loc>
+    <loc>https://jyotika.online/experience</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/couple-spa</loc>
+    <loc>https://jyotika.online/couple-spa</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://jyotika.online/packages</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/packages</loc>
+    <loc>https://jyotika.online/offers</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/offers</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.jyotikaspa.com/gallery</loc>
+    <loc>https://jyotika.online/gallery</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/videos</loc>
+    <loc>https://jyotika.online/videos</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/faq</loc>
+    <loc>https://jyotika.online/faq</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.jyotikaspa.com/booking</loc>
+    <loc>https://jyotika.online/contact</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/treatments/swedish-massage</loc>
+    <loc>https://jyotika.online/booking</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://jyotika.online/treatments/swedish-massage</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/treatments/deep-tissue-massage</loc>
+    <loc>https://jyotika.online/treatments/deep-tissue-massage</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/treatments/aromatherapy-massage</loc>
+    <loc>https://jyotika.online/treatments/aromatherapy-massage</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/treatments/balinese-massage</loc>
+    <loc>https://jyotika.online/treatments/balinese-massage</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/treatments/couple-massage</loc>
+    <loc>https://jyotika.online/treatments/couple-massage</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/treatments/head-and-shoulder-massage</loc>
+    <loc>https://jyotika.online/treatments/head-and-shoulder-massage</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/privacy</loc>
+    <loc>https://jyotika.online/privacy</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.jyotikaspa.com/terms</loc>
+    <loc>https://jyotika.online/terms</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

@@ -130,7 +130,7 @@ export default function PackagesPage({ onOpenBooking }) {
               Inquire Custom Package
             </button>
             <p className="text-[11px] text-[#777B57] text-center">
-              Call reception directly: {BUSINESS_INFO.contact.phoneDisplay}
+              Call reception directly: {BUSINESS_INFO.contact.displayPhone}
             </p>
           </div>
         </div>

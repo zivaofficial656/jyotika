@@ -83,6 +83,9 @@ export default function Hero({ onOpenBooking }) {
                     alt="Jyotika Spa Thane - Luxury Wellness Sanctuary and Therapy Suite"
                     className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
                     loading="eager"
+                    fetchPriority="high"
+                    width="600"
+                    height="750"
                   />
                   
                   {/* Subtle Gradient & Caption */}

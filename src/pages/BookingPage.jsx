@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Calendar, CheckCircle2, Sparkles } from 'lucide-react';
 import { SERVICES } from '../data/servicesData';
+import { trackBookingSubmission } from '../utils/analytics';
 import { BUSINESS_INFO } from '../data/businessInfo';
 import JyotikaLogo from '../components/JyotikaLogo';
 
@@ -23,6 +24,7 @@ export default function BookingPage() {
     if (!formData.name.trim() || (!formData.phone.trim() && !formData.email.trim())) {
       return;
     }
+    trackBookingSubmission(formData.service);
     setSubmitted(true);
   };
 

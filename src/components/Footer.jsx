@@ -51,7 +51,7 @@ export default function Footer({ onOpenBooking }) {
                     href={BUSINESS_INFO.contact.phoneTel}
                     className="hover:text-[#B77A60] transition-colors tracking-wide font-medium text-[#40352E]"
                   >
-                    {BUSINESS_INFO.contact.phoneDisplay}
+                    {BUSINESS_INFO.contact.displayPhone}
                   </a>
                 </div>
               )}

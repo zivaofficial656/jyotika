@@ -1,4 +1,9 @@
+# Robots.txt for Jyotika Spa (https://jyotika.online/)
 User-agent: *
 Allow: /
 
-Sitemap: https://www.jyotikaspa.com/sitemap.xml
+# Prevent indexing of utility 404 handler
+Disallow: /404.html
+
+# XML Sitemap
+Sitemap: https://jyotika.online/sitemap.xml
