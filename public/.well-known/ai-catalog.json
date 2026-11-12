@@ -1,0 +1,64 @@
+{
+  "name": "Jyotika Spa",
+  "category": "DaySpa",
+  "tagline": "Where Your Wellbeing Finds Its Balance",
+  "description": "Contemporary boutique wellness sanctuary at Ashar Tiara Commercial Complex, Gandhi Nagar, Thane offering restorative full body massages, bespoke couple rituals, and holistic bodywork.",
+  "location": {
+    "complex": "Ashar Tiara Commercial Complex",
+    "floor": "1st Floor, Shop No. 14–17",
+    "streetAddress": "1st Floor, Ashar Tiara Commercial Complex, Shop No. 14–17, Gandhi Nagar",
+    "city": "Thane",
+    "state": "Maharashtra",
+    "postalCode": "400601",
+    "country": "India"
+  },
+  "contact": {
+    "phone": "+91 80926 31411",
+    "email": "concierge@jyotikaspa.com",
+    "website": "https://www.jyotikaspa.com"
+  },
+  "services": [
+    {
+      "name": "Swedish Massage",
+      "slug": "swedish-massage",
+      "duration": "60 / 90 mins",
+      "category": "Gentle Circulation & Relaxation",
+      "url": "https://www.jyotikaspa.com/treatments/swedish-massage"
+    },
+    {
+      "name": "Deep Tissue Massage",
+      "slug": "deep-tissue-massage",
+      "duration": "60 / 90 mins",
+      "category": "Musculoskeletal Tension Release",
+      "url": "https://www.jyotikaspa.com/treatments/deep-tissue-massage"
+    },
+    {
+      "name": "Aromatherapy Massage",
+      "slug": "aromatherapy-massage",
+      "duration": "60 / 90 mins",
+      "category": "Sensory Botanical Therapy",
+      "url": "https://www.jyotikaspa.com/treatments/aromatherapy-massage"
+    },
+    {
+      "name": "Balinese Massage",
+      "slug": "balinese-massage",
+      "duration": "60 / 90 mins",
+      "category": "Traditional Holistic Bodywork",
+      "url": "https://www.jyotikaspa.com/treatments/balinese-massage"
+    },
+    {
+      "name": "Couple Massage Sanctuary",
+      "slug": "couple-massage",
+      "duration": "90 / 120 mins",
+      "category": "Private Dual Suite Journey",
+      "url": "https://www.jyotikaspa.com/treatments/couple-massage"
+    },
+    {
+      "name": "Head and Shoulder Massage",
+      "slug": "head-and-shoulder-massage",
+      "duration": "30 / 45 mins",
+      "category": "Targeted Upper Body Relief",
+      "url": "https://www.jyotikaspa.com/treatments/head-and-shoulder-massage"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Jyotika Spa",
+  "description": "Jyotika Spa - Contemporary boutique wellness, restorative massage, and couple rituals at Ashar Tiara Commercial Complex in Thane, Maharashtra.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

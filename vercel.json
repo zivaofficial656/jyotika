@@ -1,0 +1,40 @@
+{
+  "rewrites": [
+    {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap.xml"
+    },
+    {
+      "source": "/robots.txt",
+      "destination": "/robots.txt"
+    },
+    {
+      "source": "/favicon.svg",
+      "destination": "/favicon.svg"
+    },
+    {
+      "source": "/lotus-spa-logo.webp",
+      "destination": "/lotus-spa-logo.webp"
+    },
+    {
+      "source": "/llms.txt",
+      "destination": "/llms.txt"
+    },
+    {
+      "source": "/ai-catalog.json",
+      "destination": "/ai-catalog.json"
+    },
+    {
+      "source": "/.well-known/ai-catalog.json",
+      "destination": "/.well-known/ai-catalog.json"
+    },
+    {
+      "source": "/.well-known/ard.json",
+      "destination": "/.well-known/ard.json"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Apache / cPanel / Shared Hosting SPA Rewrite Rules
+# Redirects all non-file and non-directory requests to index.html for React Router
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Do not rewrite existing files or directories
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Serve sitemap, robots, favicon, llms.txt, ai-catalog directly if accessed
+  RewriteRule ^sitemap\.xml$ - [L]
+  RewriteRule ^robots\.txt$ - [L]
+  RewriteRule ^favicon\.svg$ - [L]
+  RewriteRule ^jyotika-spa-logo\.svg$ - [L]
+  RewriteRule ^llms\.txt$ - [L]
+  RewriteRule ^ai-catalog\.json$ - [L]
+
+  # Fallback all other routes to index.html
+  RewriteRule . /index.html [L]
+</IfModule>

@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-warm-white: #FAF9F6;
+  --color-sand: #E8DFD1;
+  --color-sand-light: #F4EFEA;
+  --color-terracotta: #B77A60;
+  --color-terracotta-dark: #995F47;
+  --color-terracotta-light: #C99079;
+  --color-olive: #777B57;
+  --color-olive-dark: #5F6344;
+  --color-olive-light: #949973;
+  --color-brown: #40352E;
+  --color-brown-light: #5A4E46;
+  --color-brown-muted: #7A6F67;
+  --color-cream: #F1EADF;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF9F6;
+    color: #40352E;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-serif-boutique {
+    font-family: var(--font-serif);
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Custom boutique scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF9F6;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8DFD1;
+  border-radius: 9999px;
+  border: 1px solid #FAF9F6;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B77A60;
+}
+
+/* Boutique luxury helpers */
+.boutique-border {
+  border-color: #E8DFD1;
+}
+
+.boutique-card {
+  background: #FAF9F6;
+  border: 1px solid #E8DFD1;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.boutique-card:hover {
+  border-color: #B77A60;
+  box-shadow: 0 16px 36px -10px rgba(64, 53, 46, 0.08);
+}
+
+/* Subtle floating button animations */
+@keyframes subtle-call-pulse {
+  0%, 100% {
+    box-shadow: 0 8px 20px -3px rgba(183, 122, 96, 0.45);
+  }
+  50% {
+    box-shadow: 0 14px 28px 2px rgba(183, 122, 96, 0.65);
+  }
+}
+
+@keyframes subtle-wa-pulse {
+  0%, 100% {
+    box-shadow: 0 8px 20px -3px rgba(37, 211, 102, 0.45);
+  }
+  50% {
+    box-shadow: 0 14px 28px 2px rgba(37, 211, 102, 0.65);
+  }
+}
+
+.animate-call-pulse {
+  animation: subtle-call-pulse 3s ease-in-out infinite;
+}
+
+.animate-wa-pulse {
+  animation: subtle-wa-pulse 3s ease-in-out infinite 1.5s;
+}
