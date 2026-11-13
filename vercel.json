@@ -1,3 +1,4 @@
+
 {
   "cleanUrls": true,
   "redirects": [
@@ -42,15 +43,6 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/(.*)\\.(?:svg|png|jpg|jpeg|webp|ico|mp4)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=2592000, stale-while-revalidate=86400"
         }
       ]
     },
@@ -104,7 +96,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!assets/|.*\\.[\\w]+$).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
