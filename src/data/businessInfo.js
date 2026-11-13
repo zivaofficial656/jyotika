@@ -19,10 +19,10 @@ export const BUSINESS_INFO = {
     full: "1st Floor, Ashar Tiara Commercial Complex, Shop No. 14–17, Gandhi Nagar, Thane, Maharashtra 400601, India"
   },
 
-  // Verified Geo Coordinates for Ashar Tiara Commercial Complex, Thane
+  // Verified Geo Coordinates for Jyotika Spa at Ashar Tiara Commercial Complex, Thane
   geo: {
-    latitude: 19.190539,
-    longitude: 72.964500
+    latitude: 19.2193665,
+    longitude: 72.9707851
   },
 
   // Contact Information
@@ -45,9 +45,9 @@ export const BUSINESS_INFO = {
     { days: "Advance Booking", time: "Recommended for private suite reservations" }
   ],
 
-  // Google Maps Search Destination & Embed for Ashar Tiara Commercial Complex, Thane
-  mapsUrl: "https://www.google.com/maps/search/?api=1&query=Ashar+Tiara+Commercial+Complex%2C+Gandhi+Nagar%2C+Thane%2C+Maharashtra+400601",
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.106421415082!2d72.96225567599373!3d19.190538948332906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9015bc2d217%3A0x673dbb893f3c3d52!2sAshar%20Tiara!5e0!3m2!1sen!2sin!4v1716300000000!5m2!1sen!2sin",
+  // Google Maps Search Destination & Embed for Jyotika Spa, Thane
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=Jyotika+Spa%2C+Ashar+Tiara+Commercial+Complex%2C+Gandhi+Nagar%2C+Thane%2C+Maharashtra+400601",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.4464200399925!2d72.9707851!3d19.2193665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b938adcbe02f%3A0x120590d43dbdba84!2sJyotika%20Spa!5e0!3m2!1sen!2sin!4v1794613001031!5m2!1sen!2sin",
 
   // Accepted Payment Modes
   paymentMethods: ["UPI (GPay, PhonePe, Paytm)", "Credit & Debit Cards", "Cash", "Net Banking"]

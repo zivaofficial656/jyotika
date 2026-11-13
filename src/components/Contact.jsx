@@ -191,21 +191,53 @@ export default function Contact({ onOpenBooking }) {
 
             </div>
 
-            {/* Google Maps Visual Embed for Ashar Tiara Commercial Complex, Thane */}
-            <div className="border border-[#E8DFD1] bg-white p-2.5 overflow-hidden shadow-2xs rounded-sm">
-              <div className="relative aspect-[16/9] w-full bg-[#E8DFD1]/20 rounded-xs overflow-hidden">
+            {/* Google Maps Visual Embed */}
+            <div className="bg-white border border-[#E8DFD1] p-6 sm:p-7 shadow-2xs rounded-sm space-y-4">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 pb-3 border-b border-[#E8DFD1]/70">
+                <div>
+                  <span className="text-[10px] tracking-[0.22em] uppercase text-[#B77A60] font-semibold block">
+                    Interactive Location
+                  </span>
+                  <h3 className="font-serif text-xl sm:text-2xl font-normal text-[#40352E]">
+                    Find Us on Google Maps
+                  </h3>
+                </div>
+                <a
+                  href={BUSINESS_INFO.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-xs text-[#777B57] hover:text-[#B77A60] font-medium transition-colors"
+                >
+                  <Navigation className="w-3.5 h-3.5 mr-1.5 text-[#B77A60]" />
+                  <span>Open in Maps</span>
+                </a>
+              </div>
+
+              {/* Responsive Map Container with Rounded Corners & Subtle Shadow */}
+              <div className="relative w-full aspect-[4/3] sm:aspect-[16/9] bg-[#E8DFD1]/20 rounded-xs overflow-hidden border border-[#E8DFD1]/80 shadow-2xs">
                 <iframe
-                  title="Jyotika Spa Thane Ashar Tiara Location Map"
+                  title="Find Us on Google Maps - Jyotika Spa"
                   src={BUSINESS_INFO.mapEmbedUrl}
-                  className="w-full h-full border-0"
+                  width="600"
+                  height="450"
+                  style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="strict-origin-when-cross-origin"
+                  className="w-full h-full border-0 block"
                 />
               </div>
-              <div className="p-3 text-center text-[11px] text-[#777B57] flex items-center justify-center space-x-1">
-                <MapPin className="w-3.5 h-3.5 text-[#B77A60]" />
-                <span>Ashar Tiara Commercial Complex, Gandhi Nagar, Thane 400601</span>
+
+              <div className="pt-1 flex items-center justify-between text-xs text-[#777B57]">
+                <div className="flex items-center space-x-1.5">
+                  <MapPin className="w-3.5 h-3.5 text-[#B77A60] shrink-0" />
+                  <span className="text-[11px] sm:text-xs">
+                    {BUSINESS_INFO.address.complex}, {BUSINESS_INFO.address.area}, {BUSINESS_INFO.address.city}
+                  </span>
+                </div>
+                <span className="text-[11px] text-[#B77A60] font-medium hidden sm:inline-block">
+                  Live Navigation
+                </span>
               </div>
             </div>
 
