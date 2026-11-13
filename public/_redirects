@@ -1,3 +1,7 @@
-# Netlify / Cloudflare Pages / Render SPA Fallback Rule
-# Redirects all page requests to index.html with HTTP status 200 for client-side routing
+# 301 Permanent Redirects for Host & Domain Migration
+https://www.jyotika.online/*  https://jyotika.online/:splat  301!
+https://jyotikaspa.com/*      https://jyotika.online/:splat  301!
+https://www.jyotikaspa.com/*  https://jyotika.online/:splat  301!
+
+# SPA Client-Side Routing Fallback
 /*    /index.html   200

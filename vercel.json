@@ -1,5 +1,40 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.jyotika.online"
+        }
+      ],
+      "destination": "https://jyotika.online/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.jyotikaspa.com"
+        }
+      ],
+      "destination": "https://jyotika.online/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "jyotikaspa.com"
+        }
+      ],
+      "destination": "https://jyotika.online/$1",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",
