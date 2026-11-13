@@ -63,7 +63,7 @@
         },
         {
           "key": "Cache-Control",
-          "value": "public, max-age=86400, stale-while-revalidate=3600"
+          "value": "no-cache, no-store, must-revalidate"
         }
       ]
     },
@@ -76,7 +76,7 @@
         },
         {
           "key": "Cache-Control",
-          "value": "public, max-age=86400, stale-while-revalidate=3600"
+          "value": "no-cache, no-store, must-revalidate"
         }
       ]
     },
@@ -104,39 +104,7 @@
   ],
   "rewrites": [
     {
-      "source": "/sitemap.xml",
-      "destination": "/sitemap.xml"
-    },
-    {
-      "source": "/robots.txt",
-      "destination": "/robots.txt"
-    },
-    {
-      "source": "/og-image.jpg",
-      "destination": "/og-image.jpg"
-    },
-    {
-      "source": "/favicon.svg",
-      "destination": "/favicon.svg"
-    },
-    {
-      "source": "/llms.txt",
-      "destination": "/llms.txt"
-    },
-    {
-      "source": "/ai-catalog.json",
-      "destination": "/ai-catalog.json"
-    },
-    {
-      "source": "/.well-known/ai-catalog.json",
-      "destination": "/.well-known/ai-catalog.json"
-    },
-    {
-      "source": "/.well-known/ard.json",
-      "destination": "/.well-known/ard.json"
-    },
-    {
-      "source": "/(.*)",
+      "source": "/((?!assets/|.*\\.[\\w]+$).*)",
       "destination": "/index.html"
     }
   ]
