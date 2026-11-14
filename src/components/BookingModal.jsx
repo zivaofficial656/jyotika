@@ -75,7 +75,7 @@ export default function BookingModal({ isOpen, onClose, initialService = null })
         <button
           type="button"
           onClick={handleClose}
-          className="absolute top-4 right-4 p-2 text-[#777B57] hover:text-[#40352E] border border-[#E8DFD1] hover:border-[#B77A60] transition-colors rounded-full cursor-pointer"
+          className="absolute top-4 right-4 p-2 text-[#5D6241] hover:text-[#40352E] border border-[#E8DFD1] hover:border-[#B77A60] transition-colors rounded-full cursor-pointer"
           aria-label="Close booking modal"
         >
           <X className="w-5 h-5" />
@@ -94,7 +94,7 @@ export default function BookingModal({ isOpen, onClose, initialService = null })
               <div className="p-3 bg-[#FAF9F6] border border-[#E8DFD1] text-[#40352E] font-medium text-xs rounded-xs">
                 {formData.service} • {formData.guests} {formData.date ? `• ${formData.date}` : ''}
               </div>
-              <p className="pt-2 text-[11px] text-[#777B57]">
+              <p className="pt-2 text-[11px] text-[#5D6241]">
                 Our reception team at Jyotika Spa Thane will reach out via {formData.phone || formData.email} to confirm available therapists and timing for your session.
               </p>
             </div>
@@ -122,10 +122,11 @@ export default function BookingModal({ isOpen, onClose, initialService = null })
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-[11px] tracking-wider uppercase text-[#5A4E46] mb-1 font-medium">
+                <label htmlFor="modal-service" className="block text-[11px] tracking-wider uppercase text-[#5A4E46] mb-1 font-medium">
                   Select Therapy
                 </label>
                 <select
+                  id="modal-service"
                   value={formData.service}
                   onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                   className="w-full px-3 py-2 bg-[#FAF9F6] border border-[#E8DFD1] text-xs text-[#40352E] focus:outline-none focus:border-[#B77A60] rounded-xs"
@@ -144,10 +145,11 @@ export default function BookingModal({ isOpen, onClose, initialService = null })
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-[11px] tracking-wider uppercase text-[#5A4E46] mb-1 font-medium">
+                  <label htmlFor="modal-name" className="block text-[11px] tracking-wider uppercase text-[#5A4E46] mb-1 font-medium">
                     Your Name *
                   </label>
                   <input
+                    id="modal-name"
                     type="text"
                     required
                     value={formData.name}
@@ -158,10 +160,11 @@ export default function BookingModal({ isOpen, onClose, initialService = null })
                 </div>
 
                 <div>
-                  <label className="block text-[11px] tracking-wider uppercase text-[#5A4E46] mb-1 font-medium">
+                  <label htmlFor="modal-phone" className="block text-[11px] tracking-wider uppercase text-[#5A4E46] mb-1 font-medium">
                     Phone / WhatsApp *
                   </label>
                   <input
+                    id="modal-phone"
                     type="tel"
                     required
                     value={formData.phone}
@@ -174,10 +177,11 @@ export default function BookingModal({ isOpen, onClose, initialService = null })
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-[11px] tracking-wider uppercase text-[#5A4E46] mb-1 font-medium">
+                  <label htmlFor="modal-date" className="block text-[11px] tracking-wider uppercase text-[#5A4E46] mb-1 font-medium">
                     Preferred Date
                   </label>
                   <input
+                    id="modal-date"
                     type="date"
                     value={formData.date}
                     onChange={(e) => setFormData({ ...formData, date: e.target.value })}
@@ -186,10 +190,11 @@ export default function BookingModal({ isOpen, onClose, initialService = null })
                 </div>
 
                 <div>
-                  <label className="block text-[11px] tracking-wider uppercase text-[#5A4E46] mb-1 font-medium">
+                  <label htmlFor="modal-timeslot" className="block text-[11px] tracking-wider uppercase text-[#5A4E46] mb-1 font-medium">
                     Preferred Time Slot
                   </label>
                   <select
+                    id="modal-timeslot"
                     value={formData.timeSlot}
                     onChange={(e) => setFormData({ ...formData, timeSlot: e.target.value })}
                     className="w-full px-3 py-2 bg-[#FAF9F6] border border-[#E8DFD1] text-xs text-[#40352E] focus:outline-none focus:border-[#B77A60] rounded-xs"
@@ -203,10 +208,11 @@ export default function BookingModal({ isOpen, onClose, initialService = null })
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-[11px] tracking-wider uppercase text-[#5A4E46] mb-1 font-medium">
+                  <label htmlFor="modal-email" className="block text-[11px] tracking-wider uppercase text-[#5A4E46] mb-1 font-medium">
                     Email Address
                   </label>
                   <input
+                    id="modal-email"
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -216,10 +222,11 @@ export default function BookingModal({ isOpen, onClose, initialService = null })
                 </div>
 
                 <div>
-                  <label className="block text-[11px] tracking-wider uppercase text-[#5A4E46] mb-1 font-medium">
+                  <label htmlFor="modal-guests" className="block text-[11px] tracking-wider uppercase text-[#5A4E46] mb-1 font-medium">
                     Number of Guests
                   </label>
                   <select
+                    id="modal-guests"
                     value={formData.guests}
                     onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
                     className="w-full px-3 py-2 bg-[#FAF9F6] border border-[#E8DFD1] text-xs text-[#40352E] focus:outline-none focus:border-[#B77A60] rounded-xs"
@@ -232,10 +239,11 @@ export default function BookingModal({ isOpen, onClose, initialService = null })
               </div>
 
               <div>
-                <label className="block text-[11px] tracking-wider uppercase text-[#5A4E46] mb-1 font-medium">
+                <label htmlFor="modal-notes" className="block text-[11px] tracking-wider uppercase text-[#5A4E46] mb-1 font-medium">
                   Preferences or Focal Areas
                 </label>
                 <textarea
+                  id="modal-notes"
                   rows={2}
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
@@ -256,7 +264,7 @@ export default function BookingModal({ isOpen, onClose, initialService = null })
 
               {BUSINESS_INFO.contact.phoneTel && (
                 <div className="text-center pt-1">
-                  <p className="text-[11px] text-[#777B57]">
+                  <p className="text-[11px] text-[#5D6241]">
                     Or speak directly with reception:
                   </p>
                   <a
@@ -269,7 +277,7 @@ export default function BookingModal({ isOpen, onClose, initialService = null })
                 </div>
               )}
 
-              <div className="text-[10px] text-[#777B57] text-center pt-2 border-t border-[#E8DFD1]/60">
+              <div className="text-[10px] text-[#5D6241] text-center pt-2 border-t border-[#E8DFD1]/60">
                 Jyotika Spa • Ashar Tiara Commercial Complex, Gandhi Nagar, Thane
               </div>
             </form>

@@ -38,7 +38,7 @@ export default function VideoGallery({ title = "Atmosphere & Therapy Films", sub
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-3.5 mb-10 sm:mb-14">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             <Film className="w-3.5 h-3.5 text-[#B77A60]" />
             <span>Cinematic Showcase</span>
           </div>

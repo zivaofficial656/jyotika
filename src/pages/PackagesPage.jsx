@@ -9,7 +9,7 @@ export default function PackagesPage({ onOpenBooking }) {
       {/* Header Banner */}
       <div className="bg-[#F1EADF] border-b border-[#E8DFD1] py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-xs tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             <Sparkles className="w-3.5 h-3.5 text-[#B77A60]" />
             <span>Curated Sanctuary Journeys</span>
           </div>
@@ -42,8 +42,11 @@ export default function PackagesPage({ onOpenBooking }) {
                     src={pkg.image}
                     alt={pkg.title}
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                    width="600"
+                    height="338"
                   />
-                  <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-xs px-3 py-1 rounded-full border border-[#E8DFD1] text-[10px] tracking-wider uppercase font-semibold text-[#B77A60] shadow-sm">
+                  <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-xs px-3 py-1 rounded-full border border-[#E8DFD1] text-[11px] tracking-wider uppercase font-semibold text-[#A35D43] shadow-sm">
                     {pkg.badge}
                   </div>
                 </div>
@@ -51,7 +54,7 @@ export default function PackagesPage({ onOpenBooking }) {
                 {/* Content */}
                 <div className="p-8 space-y-4">
                   <div className="flex items-baseline justify-between">
-                    <span className="text-[11px] uppercase tracking-widest text-[#777B57] font-semibold flex items-center">
+                    <span className="text-xs uppercase tracking-widest text-[#5D6241] font-semibold flex items-center">
                       <Clock className="w-3.5 h-3.5 mr-1 text-[#B77A60]" />
                       {pkg.duration}
                     </span>
@@ -70,7 +73,7 @@ export default function PackagesPage({ onOpenBooking }) {
 
                   {/* Inclusions */}
                   <div className="pt-4 border-t border-[#E8DFD1]/60 space-y-2">
-                    <p className="text-[10px] uppercase tracking-wider text-[#777B57] font-semibold">
+                    <p className="text-[10px] uppercase tracking-wider text-[#5D6241] font-semibold">
                       Package Inclusions:
                     </p>
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-[#595048]">
@@ -84,7 +87,7 @@ export default function PackagesPage({ onOpenBooking }) {
                   </div>
 
                   {pkg.idealFor && (
-                    <div className="pt-2 text-[11px] text-[#777B57] italic">
+                    <div className="pt-2 text-[11px] text-[#5D6241] italic">
                       Recommended for: {pkg.idealFor}
                     </div>
                   )}
@@ -129,7 +132,7 @@ export default function PackagesPage({ onOpenBooking }) {
             >
               Inquire Custom Package
             </button>
-            <p className="text-[11px] text-[#777B57] text-center">
+            <p className="text-[11px] text-[#5D6241] text-center">
               Call reception directly: {BUSINESS_INFO.contact.displayPhone}
             </p>
           </div>

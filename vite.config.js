@@ -14,4 +14,23 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173,
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules/react/') || id.includes('node_modules/react-dom/')) {
+            return 'vendor';
+          }
+          if (id.includes('node_modules/react-router') || id.includes('node_modules/react-router-dom/')) {
+            return 'router';
+          }
+          if (id.includes('node_modules/lucide-react/')) {
+            return 'icons';
+          }
+        },
+      },
+    },
+    cssCodeSplit: true,
+    chunkSizeWarningLimit: 600,
+  },
 })

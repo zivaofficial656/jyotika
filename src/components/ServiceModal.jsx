@@ -110,14 +110,14 @@ export default function ServiceModal({ service, isOpen, onClose, onBookNow }) {
           )}
 
           {/* Pricing transparency note */}
-          <p className="text-[11px] text-[#777B57] italic text-center">
+          <p className="text-[11px] text-[#5D6241] italic text-center">
             *Official prices are confirmed upon appointment consultation based on customized pressure and session length.
           </p>
         </div>
 
         {/* Modal Footer */}
         <div className="p-4 sm:p-6 bg-[#FAF9F6] border-t border-[#E8DFD1] flex flex-col sm:flex-row items-center justify-between gap-3 shrink-0">
-          <span className="text-xs text-[#777B57]">Jyotika Spa • Gandhi Nagar, Thane</span>
+          <span className="text-xs text-[#5D6241]">Jyotika Spa • Gandhi Nagar, Thane</span>
           <div className="flex items-center space-x-3 w-full sm:w-auto">
             <button
               type="button"

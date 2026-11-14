@@ -8,7 +8,7 @@ export default function Packages({ onOpenBooking }) {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-3.5 mb-16">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-xs tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             <Sparkles className="w-3.5 h-3.5 text-[#B77A60]" />
             <span>Curated Wellness Journeys</span>
           </div>
@@ -37,9 +37,11 @@ export default function Packages({ onOpenBooking }) {
                     alt={`${pkg.title} - Jyotika Spa Thane Package`}
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                     loading="lazy"
+                    width="400"
+                    height="250"
                   />
                   <div className="absolute top-3 right-3">
-                    <span className="text-[9px] tracking-[0.2em] uppercase px-2.5 py-1 bg-white/95 backdrop-blur-xs border border-[#E8DFD1] text-[#B77A60] font-semibold shadow-2xs rounded-full">
+                    <span className="text-[11px] tracking-[0.2em] uppercase px-2.5 py-1 bg-white/95 backdrop-blur-xs border border-[#E8DFD1] text-[#A35D43] font-semibold shadow-2xs rounded-full">
                       {pkg.badge}
                     </span>
                   </div>
@@ -58,7 +60,7 @@ export default function Packages({ onOpenBooking }) {
 
                   {/* Inclusions list */}
                   <div className="space-y-2 pt-3 border-t border-[#E8DFD1]/60">
-                    <p className="text-[10px] uppercase tracking-wider text-[#777B57] font-semibold">
+                    <p className="text-[11px] uppercase tracking-wider text-[#5D6241] font-semibold">
                       Ritual Includes:
                     </p>
                     <ul className="space-y-1.5 text-xs text-[#5A4E46]">
@@ -73,7 +75,7 @@ export default function Packages({ onOpenBooking }) {
                 </div>
 
                 <div className="pt-4 border-t border-[#E8DFD1]/60 space-y-3">
-                  <div className="flex items-center justify-between text-xs text-[#777B57]">
+                  <div className="flex items-center justify-between text-xs text-[#5D6241]">
                     <div className="flex items-center space-x-1 font-medium">
                       <Clock className="w-3.5 h-3.5 text-[#B77A60]" />
                       <span>{pkg.duration}</span>
@@ -86,7 +88,7 @@ export default function Packages({ onOpenBooking }) {
                   <button
                     type="button"
                     onClick={() => onOpenBooking ? onOpenBooking(pkg.title) : window.location.assign('/booking')}
-                    className="w-full inline-flex items-center justify-center px-4 py-2.5 text-[11px] tracking-[0.16em] uppercase font-medium text-white bg-[#40352E] hover:bg-[#B77A60] transition-all rounded-xs shadow-2xs cursor-pointer border border-[#40352E]"
+                    className="w-full min-h-[44px] inline-flex items-center justify-center px-4 py-2.5 text-xs tracking-[0.16em] uppercase font-medium text-white bg-[#40352E] hover:bg-[#B77A60] transition-all rounded-xs shadow-2xs cursor-pointer border border-[#40352E] active:scale-[0.98]"
                   >
                     <Calendar className="w-3.5 h-3.5 mr-1.5 text-[#E8DFD1]" />
                     Book Package

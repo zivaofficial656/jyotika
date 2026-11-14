@@ -8,8 +8,9 @@ import SEOManager from './components/SEOManager';
 import FloatingContactButtons from './components/FloatingContactButtons';
 import RouteLoader from './components/RouteLoader';
 
-// Route-level code splitting via React.lazy for optimized Core Web Vitals
-const HomePage = lazy(() => import('./pages/HomePage'));
+import HomePage from './pages/HomePage';
+
+// Route-level code splitting via React.lazy for secondary routes
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
 const TreatmentDetailPage = lazy(() => import('./pages/TreatmentDetailPage'));

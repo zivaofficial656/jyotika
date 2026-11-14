@@ -19,6 +19,8 @@ export default function JyotikaLogo({
       <img
         src={elegantLogo}
         alt="Jyotika Spa - Contemporary Boutique Wellness Sanctuary Thane"
+        width="200"
+        height="50"
         className={`${sizeClasses[size] || sizeClasses.md} w-auto object-contain transition-transform duration-300 group-hover:scale-105 ${
           isLight ? 'brightness-110 drop-shadow-[0_2px_8px_rgba(255,255,255,0.25)]' : 'drop-shadow-xs'
         }`}

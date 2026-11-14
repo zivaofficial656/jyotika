@@ -34,7 +34,7 @@ export default function ServiceCard({ service, onBookNow }) {
         </div>
 
         {/* Duration & Pricing consultation */}
-        <div className="pt-3 border-t border-[#E8DFD1]/70 flex items-center justify-between text-[11px] text-[#777B57]">
+        <div className="pt-3 border-t border-[#E8DFD1]/70 flex items-center justify-between text-xs text-[#5D6241]">
           <div className="flex items-center space-x-1.5 font-medium">
             <Clock className="w-3.5 h-3.5 text-[#B77A60]" />
             <span>{service.duration}</span>
@@ -49,7 +49,7 @@ export default function ServiceCard({ service, onBookNow }) {
         <div className="grid grid-cols-2 gap-2.5 pt-1">
           <Link
             to={`/treatments/${service.slug}`}
-            className="inline-flex items-center justify-center px-3 py-2.5 text-[11px] tracking-[0.14em] uppercase font-medium text-[#40352E] bg-[#FAF9F6] hover:bg-[#F1EADF] border border-[#E8DFD1] transition-all rounded-xs cursor-pointer"
+            className="min-h-[44px] inline-flex items-center justify-center px-3 py-2.5 text-xs tracking-[0.14em] uppercase font-medium text-[#40352E] bg-[#FAF9F6] hover:bg-[#F1EADF] border border-[#E8DFD1] transition-all rounded-xs cursor-pointer active:scale-98"
           >
             <span>Learn More</span>
             <ChevronRight className="w-3 h-3 ml-1 text-[#B77A60]" />
@@ -58,7 +58,8 @@ export default function ServiceCard({ service, onBookNow }) {
           <button
             type="button"
             onClick={() => onBookNow(service)}
-            className="inline-flex items-center justify-center px-3 py-2.5 text-[11px] tracking-[0.16em] uppercase font-medium text-white bg-[#40352E] hover:bg-[#B77A60] transition-all rounded-xs cursor-pointer shadow-2xs border border-[#40352E]"
+            aria-label={`Book ${service.name}`}
+            className="min-h-[44px] inline-flex items-center justify-center px-3 py-2.5 text-xs tracking-[0.16em] uppercase font-medium text-white bg-[#40352E] hover:bg-[#B77A60] transition-all rounded-xs cursor-pointer shadow-2xs border border-[#40352E] active:scale-98"
           >
             <Calendar className="w-3 h-3 mr-1 text-[#E8DFD1]" />
             <span>Book</span>

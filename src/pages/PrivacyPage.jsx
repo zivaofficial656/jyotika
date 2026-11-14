@@ -6,14 +6,14 @@ export default function PrivacyPage() {
       {/* Header Banner */}
       <div className="bg-[#F1EADF] border-b border-[#E8DFD1] py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <span className="text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <span className="text-xs tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             Legal & Confidentiality
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl text-[#40352E] font-normal tracking-tight">
             Privacy Policy
           </h1>
           <div className="w-16 h-0.5 bg-[#B77A60] mx-auto rounded-full" />
-          <p className="text-xs text-[#777B57]">Last updated: {new Date().getFullYear()}</p>
+          <p className="text-xs text-[#5D6241]">Last updated: {new Date().getFullYear()}</p>
         </div>
       </div>
 

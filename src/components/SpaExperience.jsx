@@ -39,7 +39,7 @@ export default function SpaExperience() {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-xs tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             <Sparkles className="w-3.5 h-3.5 text-[#B77A60]" />
             <span>The Jyotika Experience</span>
           </div>
@@ -72,6 +72,8 @@ export default function SpaExperience() {
                       alt={item.title}
                       className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"
+                      width="400"
+                      height="300"
                     />
                     <div className="absolute top-3 right-3 bg-white/95 backdrop-blur-xs p-2 rounded-full border border-[#E8DFD1] text-[#B77A60] shadow-2xs">
                       <Icon className="w-4 h-4" />
@@ -80,7 +82,7 @@ export default function SpaExperience() {
 
                   {/* Narrative */}
                   <div className="p-6 space-y-2">
-                    <span className="text-[10px] tracking-[0.22em] uppercase text-[#777B57] font-semibold">
+                    <span className="text-[11px] tracking-[0.22em] uppercase text-[#5D6241] font-semibold">
                       {item.category}
                     </span>
                     <h3 className="font-serif text-xl text-[#40352E] font-normal group-hover:text-[#B77A60] transition-colors leading-snug">
@@ -94,7 +96,7 @@ export default function SpaExperience() {
 
                 <div className="px-6 pb-6 pt-2">
                   <div className="w-full h-px bg-[#E8DFD1]/60" />
-                  <p className="text-[10px] tracking-widest uppercase text-[#777B57] mt-3 font-mono">
+                  <p className="text-[11px] tracking-widest uppercase text-[#5D6241] mt-3 font-mono">
                     Ashar Tiara • Thane
                   </p>
                 </div>

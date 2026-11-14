@@ -33,7 +33,7 @@ export default function BookingPage() {
       {/* Header Banner */}
       <div className="bg-[#F1EADF] border-b border-[#E8DFD1] py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             <Sparkles className="w-3.5 h-3.5 text-[#B77A60]" />
             <span>Online Reservations</span>
           </div>
@@ -57,7 +57,7 @@ export default function BookingPage() {
             <JyotikaLogo variant="symbol" size="sm" />
             <div>
               <p className="font-serif text-xl text-[#40352E] font-medium">Jyotika Spa • Thane</p>
-              <p className="text-xs text-[#777B57]">{BUSINESS_INFO.address.full}</p>
+              <p className="text-xs text-[#5D6241]">{BUSINESS_INFO.address.full}</p>
             </div>
           </div>
 
@@ -73,7 +73,7 @@ export default function BookingPage() {
               <div className="p-4 bg-[#FAF9F6] border border-[#E8DFD1] max-w-sm mx-auto text-xs text-[#40352E] rounded-xs">
                 {formData.guests} {formData.date ? `• Date: ${formData.date}` : ''} • {formData.timeSlot}
               </div>
-              <p className="text-xs text-[#777B57] pt-2 max-w-md mx-auto">
+              <p className="text-xs text-[#5D6241] pt-2 max-w-md mx-auto">
                 Our reception team will call or message your phone number ({formData.phone}) to confirm therapist availability and room allocation.
               </p>
             </div>
@@ -81,10 +81,11 @@ export default function BookingPage() {
             <form onSubmit={handleSubmit} className="space-y-6">
               
               <div>
-                <label className="block text-xs uppercase tracking-wider text-[#595048] mb-2 font-medium">
+                <label htmlFor="booking-service" className="block text-xs uppercase tracking-wider text-[#595048] mb-2 font-medium">
                   Select Treatment / Curated Package
                 </label>
                 <select
+                  id="booking-service"
                   value={formData.service}
                   onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                   className="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E8DFD1] text-xs text-[#40352E] focus:outline-none focus:border-[#B77A60] rounded-xs"
@@ -103,40 +104,43 @@ export default function BookingPage() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-xs uppercase tracking-wider text-[#595048] mb-2 font-medium">
+                  <label htmlFor="booking-name" className="block text-xs uppercase tracking-wider text-[#595048] mb-2 font-medium">
                     Your Full Name *
                   </label>
                   <input
+                    id="booking-name"
                     type="text"
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Enter guest name"
-                    className="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E8DFD1] text-xs text-[#40352E] focus:outline-none focus:border-[#B77A60] rounded-xs placeholder:text-[#777B57]/60"
+                    className="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E8DFD1] text-xs text-[#40352E] focus:outline-none focus:border-[#B77A60] rounded-xs placeholder:text-[#5D6241]/60"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs uppercase tracking-wider text-[#595048] mb-2 font-medium">
+                  <label htmlFor="booking-phone" className="block text-xs uppercase tracking-wider text-[#595048] mb-2 font-medium">
                     Mobile Phone Number *
                   </label>
                   <input
+                    id="booking-phone"
                     type="tel"
                     required
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     placeholder="e.g. 98200 12345"
-                    className="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E8DFD1] text-xs text-[#40352E] focus:outline-none focus:border-[#B77A60] rounded-xs placeholder:text-[#777B57]/60"
+                    className="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E8DFD1] text-xs text-[#40352E] focus:outline-none focus:border-[#B77A60] rounded-xs placeholder:text-[#5D6241]/60"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-xs uppercase tracking-wider text-[#595048] mb-2 font-medium">
+                  <label htmlFor="booking-date" className="block text-xs uppercase tracking-wider text-[#595048] mb-2 font-medium">
                     Preferred Date
                   </label>
                   <input
+                    id="booking-date"
                     type="date"
                     value={formData.date}
                     onChange={(e) => setFormData({ ...formData, date: e.target.value })}
@@ -145,10 +149,11 @@ export default function BookingPage() {
                 </div>
 
                 <div>
-                  <label className="block text-xs uppercase tracking-wider text-[#595048] mb-2 font-medium">
+                  <label htmlFor="booking-timeslot" className="block text-xs uppercase tracking-wider text-[#595048] mb-2 font-medium">
                     Preferred Time Slot
                   </label>
                   <select
+                    id="booking-timeslot"
                     value={formData.timeSlot}
                     onChange={(e) => setFormData({ ...formData, timeSlot: e.target.value })}
                     className="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E8DFD1] text-xs text-[#40352E] focus:outline-none focus:border-[#B77A60] rounded-xs"
@@ -162,23 +167,25 @@ export default function BookingPage() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-xs uppercase tracking-wider text-[#595048] mb-2 font-medium">
+                  <label htmlFor="booking-email" className="block text-xs uppercase tracking-wider text-[#595048] mb-2 font-medium">
                     Email Address
                   </label>
                   <input
+                    id="booking-email"
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="email@example.com"
-                    className="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E8DFD1] text-xs text-[#40352E] focus:outline-none focus:border-[#B77A60] rounded-xs placeholder:text-[#777B57]/60"
+                    className="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E8DFD1] text-xs text-[#40352E] focus:outline-none focus:border-[#B77A60] rounded-xs placeholder:text-[#5D6241]/60"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs uppercase tracking-wider text-[#595048] mb-2 font-medium">
+                  <label htmlFor="booking-guests" className="block text-xs uppercase tracking-wider text-[#595048] mb-2 font-medium">
                     Number of Guests
                   </label>
                   <select
+                    id="booking-guests"
                     value={formData.guests}
                     onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
                     className="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E8DFD1] text-xs text-[#40352E] focus:outline-none focus:border-[#B77A60] rounded-xs"
@@ -191,15 +198,16 @@ export default function BookingPage() {
               </div>
 
               <div>
-                <label className="block text-xs uppercase tracking-wider text-[#595048] mb-2 font-medium">
+                <label htmlFor="booking-notes" className="block text-xs uppercase tracking-wider text-[#595048] mb-2 font-medium">
                   Special Notes or Muscle Focus Areas
                 </label>
                 <textarea
+                  id="booking-notes"
                   rows={3}
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                   placeholder="Mention target muscle tightness, pressure preferences, or special occasion requests..."
-                  className="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E8DFD1] text-xs text-[#40352E] focus:outline-none focus:border-[#B77A60] rounded-xs placeholder:text-[#777B57]/60"
+                  className="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E8DFD1] text-xs text-[#40352E] focus:outline-none focus:border-[#B77A60] rounded-xs placeholder:text-[#5D6241]/60"
                 />
               </div>
 
@@ -213,7 +221,7 @@ export default function BookingPage() {
                 </button>
               </div>
 
-              <p className="text-[11px] text-[#777B57] text-center pt-2">
+              <p className="text-[11px] text-[#5D6241] text-center pt-2">
                 *Appointments are verified directly with our reception team prior to confirmation.
               </p>
 

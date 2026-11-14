@@ -40,7 +40,7 @@ export default function FAQPage() {
       {/* Header Banner */}
       <div className="bg-[#F1EADF] border-b border-[#E8DFD1] py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-xs tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             <Sparkles className="w-3.5 h-3.5 text-[#B77A60]" />
             <span>Guest Assistance</span>
           </div>
@@ -62,13 +62,13 @@ export default function FAQPage() {
         {/* Search & Categories */}
         <div className="space-y-6">
           <div className="relative">
-            <Search className="w-4 h-4 text-[#777B57] absolute left-4 top-1/2 -translate-y-1/2" />
+            <Search className="w-4 h-4 text-[#5D6241] absolute left-4 top-1/2 -translate-y-1/2" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search frequently asked questions..."
-              className="w-full pl-11 pr-4 py-3.5 text-xs bg-white border border-[#E8DFD1] focus:outline-none focus:border-[#B77A60] rounded-xs text-[#40352E] shadow-2xs placeholder:text-[#777B57]/60"
+              className="w-full pl-11 pr-4 py-3.5 text-xs bg-white border border-[#E8DFD1] focus:outline-none focus:border-[#B77A60] rounded-xs text-[#40352E] shadow-2xs placeholder:text-[#5D6241]/60"
             />
           </div>
 

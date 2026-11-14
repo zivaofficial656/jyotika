@@ -118,7 +118,7 @@ export default function Navbar({ onOpenBooking }) {
               <a
                 href={BUSINESS_INFO.contact.phoneTel}
                 onClick={() => trackCallClick('navbar_mobile')}
-                className="p-2 text-[#40352E] bg-white border border-[#E8DFD1] rounded-xs hover:border-[#B77A60]"
+                className="min-w-[44px] min-h-[44px] inline-flex items-center justify-center p-2.5 text-[#40352E] bg-white border border-[#E8DFD1] rounded-xs hover:border-[#B77A60] active:scale-95"
                 aria-label={`Call ${BUSINESS_INFO.contact.displayPhone}`}
               >
                 <Phone className="w-4 h-4 text-[#B77A60]" />
@@ -127,15 +127,18 @@ export default function Navbar({ onOpenBooking }) {
             <button
               onClick={onOpenBooking}
               type="button"
-              className="inline-flex items-center px-3.5 py-1.5 text-[11px] tracking-widest uppercase font-medium text-white bg-[#40352E] hover:bg-[#B77A60] rounded-xs shadow-2xs"
+              className="min-h-[44px] inline-flex items-center justify-center px-4 py-2 text-xs tracking-widest uppercase font-medium text-white bg-[#40352E] hover:bg-[#B77A60] rounded-xs shadow-2xs active:scale-95"
+              aria-label="Book appointment"
             >
               Book
             </button>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-[#40352E] hover:text-[#B77A60] focus:outline-none"
+              className="min-w-[44px] min-h-[44px] inline-flex items-center justify-center p-2 text-[#40352E] hover:text-[#B77A60] focus:outline-none"
               aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-navigation-drawer"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -146,7 +149,7 @@ export default function Navbar({ onOpenBooking }) {
 
       {/* Modern Responsive Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-b border-[#E8DFD1] bg-[#FAF9F6] px-6 pt-4 pb-8 shadow-xl animate-in slide-in-from-top-2 duration-200">
+        <div id="mobile-navigation-drawer" className="lg:hidden border-b border-[#E8DFD1] bg-[#FAF9F6] px-6 pt-4 pb-8 shadow-xl animate-in slide-in-from-top-2 duration-200">
           <div className="mb-4 pb-3 border-b border-[#E8DFD1]">
             <JyotikaLogo size="sm" />
           </div>

@@ -31,7 +31,7 @@ export default function ServicesPage({ onSelectServiceForBooking }) {
       {/* Header Banner */}
       <div className="bg-[#F1EADF] border-b border-[#E8DFD1] py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-xs tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             <Sparkles className="w-3.5 h-3.5 text-[#B77A60]" />
             <span>Complete Therapy Catalog</span>
           </div>
@@ -72,13 +72,13 @@ export default function ServicesPage({ onSelectServiceForBooking }) {
 
           {/* Search Box */}
           <div className="relative w-full md:w-72">
-            <Search className="w-4 h-4 text-[#777B57] absolute left-3 top-1/2 -translate-y-1/2" />
+            <Search className="w-4 h-4 text-[#5D6241] absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search treatments..."
-              className="w-full pl-9 pr-4 py-2 text-xs bg-[#FAF9F6] border border-[#E8DFD1] focus:outline-none focus:border-[#B77A60] rounded-xs text-[#40352E] placeholder:text-[#777B57]/60"
+              className="w-full pl-9 pr-4 py-2 text-xs bg-[#FAF9F6] border border-[#E8DFD1] focus:outline-none focus:border-[#B77A60] rounded-xs text-[#40352E] placeholder:text-[#5D6241]/60"
             />
           </div>
 
@@ -117,19 +117,19 @@ export default function ServicesPage({ onSelectServiceForBooking }) {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-[#595048]">
             <div className="p-5 bg-[#FAF9F6] border border-[#E8DFD1] rounded-xs space-y-2">
-              <span className="text-[10px] uppercase font-bold text-[#777B57] tracking-wider">Gentle to Light</span>
+              <span className="text-[10px] uppercase font-bold text-[#5D6241] tracking-wider">Gentle to Light</span>
               <p className="font-serif text-lg text-[#40352E]">Swedish & Aromatherapy</p>
               <p className="font-light leading-relaxed">Focuses on surface circulation, rhythmic relaxation, and gentle lymphatic flow. Ideal for sensory de-escalation and quiet unwinding.</p>
             </div>
 
             <div className="p-5 bg-[#FAF9F6] border border-[#E8DFD1] rounded-xs space-y-2">
-              <span className="text-[10px] uppercase font-bold text-[#777B57] tracking-wider">Medium to Acupressure</span>
+              <span className="text-[10px] uppercase font-bold text-[#5D6241] tracking-wider">Medium to Acupressure</span>
               <p className="font-serif text-lg text-[#40352E]">Balinese & Hot Stone</p>
               <p className="font-light leading-relaxed">Combines rhythmic compression, palm acupressure, gentle passive stretches, and penetrating warmth to open tight energy lines.</p>
             </div>
 
             <div className="p-5 bg-[#FAF9F6] border border-[#E8DFD1] rounded-xs space-y-2">
-              <span className="text-[10px] uppercase font-bold text-[#777B57] tracking-wider">Therapeutic & Firm</span>
+              <span className="text-[10px] uppercase font-bold text-[#5D6241] tracking-wider">Therapeutic & Firm</span>
               <p className="font-serif text-lg text-[#40352E]">Deep Tissue Bodywork</p>
               <p className="font-light leading-relaxed">Concentrated deep-layer pressure targeting chronic knots, postural adhesions, and neck/spinal strain from long screen hours.</p>
             </div>

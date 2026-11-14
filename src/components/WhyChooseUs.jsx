@@ -47,7 +47,7 @@ export default function WhyChooseUs() {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-3.5 mb-16">
-          <p className="text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <p className="text-[11px] tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             Boutique Excellence
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-[#40352E] tracking-tight">
@@ -81,7 +81,7 @@ export default function WhyChooseUs() {
                 </div>
 
                 <div className="pt-6 mt-6 border-t border-[#E8DFD1]/60 flex items-center justify-between">
-                  <span className="text-[10px] tracking-widest text-[#777B57] uppercase font-mono font-medium">
+                  <span className="text-[10px] tracking-widest text-[#5D6241] uppercase font-mono font-medium">
                     0{idx + 1}
                   </span>
                   <div className="w-6 h-0.5 bg-[#E8DFD1] group-hover:w-12 group-hover:bg-[#B77A60] transition-all duration-300 rounded-full" />

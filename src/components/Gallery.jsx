@@ -27,7 +27,7 @@ export default function Gallery() {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-3.5 mb-12">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-xs tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             <Sparkles className="w-3.5 h-3.5 text-[#B77A60]" />
             <span>Visual Sanctuary</span>
           </div>
@@ -51,7 +51,7 @@ export default function Gallery() {
               role="tab"
               aria-selected={activeCategory === cat.id}
               onClick={() => setActiveCategory(cat.id)}
-              className={`px-5 py-2.5 text-xs tracking-[0.16em] uppercase font-medium transition-all border rounded-full cursor-pointer ${
+              className={`min-h-[44px] px-5 py-2.5 text-xs tracking-[0.16em] uppercase font-medium transition-all border rounded-full cursor-pointer ${
                 activeCategory === cat.id
                   ? 'bg-[#40352E] text-white border-[#40352E] shadow-sm'
                   : 'bg-white text-[#5A4E46] border-[#E8DFD1] hover:border-[#B77A60] hover:text-[#40352E]'
@@ -67,8 +67,17 @@ export default function Gallery() {
           {filteredItems.map((item) => (
             <div
               key={item.id}
+              role="button"
+              tabIndex={0}
+              aria-label={`View photo: ${item.title}`}
               onClick={() => setLightboxItem(item)}
-              className="group relative aspect-[4/3] bg-white border border-[#E8DFD1] overflow-hidden cursor-pointer rounded-sm shadow-2xs hover:shadow-xl transition-all duration-500"
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  setLightboxItem(item);
+                }
+              }}
+              className="group relative aspect-[4/3] bg-white border border-[#E8DFD1] overflow-hidden cursor-pointer rounded-sm shadow-2xs hover:shadow-xl transition-all duration-500 focus:outline-none focus:ring-2 focus:ring-[#B77A60]"
             >
               <img
                 src={item.image}
@@ -76,6 +85,8 @@ export default function Gallery() {
                 className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
                 decoding="async"
+                width="400"
+                height="300"
               />
                 
                 {/* Refined Hover Overlay */}
@@ -87,7 +98,7 @@ export default function Gallery() {
                   </div>
                   <div>
                     <p className="font-serif text-lg font-normal leading-snug">{item.title}</p>
-                    <p className="text-[10px] tracking-[0.2em] uppercase text-[#E8DFD1] mt-1 opacity-90 font-light">
+                    <p className="text-[11px] tracking-[0.2em] uppercase text-[#E8DFD1] mt-1 opacity-90 font-light">
                       Click to expand
                     </p>
                   </div>

@@ -38,7 +38,7 @@ import elegantLogo from '../assets/images/elegant-jyotika-spa-logo.webp';
 export const LOGO_IMAGE = elegantLogo;
 
 export const HERO_IMAGES = {
-  main: heroLuxurySuite,
+  main: '/hero-luxury-suite.webp',
   accent: heroBotanicalOil,
   secondary: heroReceptionAmbience
 };

@@ -54,7 +54,7 @@ export default function ExperiencePage({ onOpenBooking }) {
       {/* Header Banner */}
       <div className="bg-[#F1EADF]/40 border-b border-[#E8DFD1] py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             <Sparkles className="w-3.5 h-3.5 text-[#B77A60]" />
             <span>The Jyotika Environment</span>
           </div>
@@ -104,9 +104,12 @@ export default function ExperiencePage({ onOpenBooking }) {
                   src={EXPERIENCE_IMAGES.treatmentRooms}
                   alt="Private single treatment room at Jyotika Spa Thane"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition duration-700"
+                  loading="lazy"
+                  width="300"
+                  height="375"
                 />
               </div>
-              <p className="text-[11px] tracking-widest uppercase text-[#777B57] text-center font-medium">
+              <p className="text-xs tracking-widest uppercase text-[#5D6241] text-center font-medium">
                 Pristine Therapy Suites
               </p>
             </div>
@@ -117,9 +120,12 @@ export default function ExperiencePage({ onOpenBooking }) {
                   src={GALLERY_IMAGES.relaxationCorner}
                   alt="Post ritual herbal tea lounge at Jyotika Spa Thane"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition duration-700"
+                  loading="lazy"
+                  width="300"
+                  height="375"
                 />
               </div>
-              <p className="text-[11px] tracking-widest uppercase text-[#777B57] text-center font-medium">
+              <p className="text-xs tracking-widest uppercase text-[#5D6241] text-center font-medium">
                 Herbal Relaxation Nook
               </p>
             </div>
@@ -153,7 +159,7 @@ export default function ExperiencePage({ onOpenBooking }) {
                       {pil.desc}
                     </p>
                   </div>
-                  <div className="pt-6 mt-6 border-t border-[#E8DFD1]/50 text-[10px] text-[#777B57] uppercase tracking-widest font-mono">
+                  <div className="pt-6 mt-6 border-t border-[#E8DFD1]/50 text-[10px] text-[#5D6241] uppercase tracking-widest font-mono">
                     Standard 0{idx + 1}
                   </div>
                 </div>

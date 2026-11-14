@@ -61,7 +61,7 @@ export default function Contact({ onOpenBooking }) {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-3.5 mb-16">
-          <p className="text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <p className="text-xs tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             Visit & Connect
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-[#40352E] tracking-tight">
@@ -83,7 +83,7 @@ export default function Contact({ onOpenBooking }) {
               <div className="flex items-center space-x-4">
                 <JyotikaLogo variant="symbol" size="md" />
                 <div>
-                  <span className="text-[10px] tracking-[0.25em] uppercase text-[#B77A60] font-semibold">Contemporary Boutique Wellness</span>
+                  <span className="text-[11px] tracking-[0.25em] uppercase text-[#A35D43] font-semibold">Contemporary Boutique Wellness</span>
                   <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#40352E] mt-0.5">
                     {BUSINESS_INFO.name}
                   </h3>
@@ -113,7 +113,7 @@ export default function Contact({ onOpenBooking }) {
                         {BUSINESS_INFO.contact.displayPhone}
                       </a>
                     ) : (
-                      <p className="italic text-[#777B57]">{BUSINESS_INFO.contact.displayPhone}</p>
+                      <p className="italic text-[#5D6241]">{BUSINESS_INFO.contact.displayPhone}</p>
                     )}
                   </div>
                 </div>
@@ -151,7 +151,7 @@ export default function Contact({ onOpenBooking }) {
                   <a
                     href={BUSINESS_INFO.contact.phoneTel}
                     onClick={() => trackCallClick('contact_page')}
-                    className="inline-flex items-center px-4 py-2.5 text-xs tracking-wider uppercase font-medium text-white bg-[#40352E] hover:bg-[#B77A60] transition-colors rounded-xs shadow-2xs border border-[#40352E]"
+                    className="min-h-[44px] inline-flex items-center px-4 py-2.5 text-xs tracking-wider uppercase font-medium text-white bg-[#40352E] hover:bg-[#B77A60] transition-colors rounded-xs shadow-2xs border border-[#40352E]"
                   >
                     <Phone className="w-3.5 h-3.5 mr-2 text-[#E8DFD1]" />
                     Call Now
@@ -162,7 +162,7 @@ export default function Contact({ onOpenBooking }) {
                   href={BUSINESS_INFO.mapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2.5 text-xs tracking-wider uppercase font-medium text-[#40352E] bg-[#FAF9F6] hover:bg-[#F1EADF] border border-[#E8DFD1] transition-colors rounded-xs"
+                  className="min-h-[44px] inline-flex items-center px-4 py-2.5 text-xs tracking-wider uppercase font-medium text-[#40352E] bg-[#FAF9F6] hover:bg-[#F1EADF] border border-[#E8DFD1] transition-colors rounded-xs"
                 >
                   <Navigation className="w-3.5 h-3.5 mr-2 text-[#B77A60]" />
                   Get Directions
@@ -173,7 +173,7 @@ export default function Contact({ onOpenBooking }) {
                   onClick={() => trackWhatsAppClick('contact_page')}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2.5 text-xs tracking-wider uppercase font-medium text-white bg-[#25D366] hover:bg-[#20bd5a] transition-colors rounded-xs"
+                  className="min-h-[44px] inline-flex items-center px-4 py-2.5 text-xs tracking-wider uppercase font-medium text-white bg-[#25D366] hover:bg-[#20bd5a] transition-colors rounded-xs"
                 >
                   <MessageCircle className="w-3.5 h-3.5 mr-2 fill-white stroke-none" />
                   WhatsApp
@@ -182,7 +182,7 @@ export default function Contact({ onOpenBooking }) {
                 <button
                   type="button"
                   onClick={onOpenBooking}
-                  className="inline-flex items-center px-4 py-2.5 text-xs tracking-wider uppercase font-medium text-[#40352E] bg-white hover:bg-[#FAF9F6] border border-[#B77A60] transition-colors rounded-xs cursor-pointer"
+                  className="min-h-[44px] inline-flex items-center px-4 py-2.5 text-xs tracking-wider uppercase font-medium text-[#40352E] bg-white hover:bg-[#FAF9F6] border border-[#B77A60] transition-colors rounded-xs cursor-pointer"
                 >
                   <Calendar className="w-3.5 h-3.5 mr-2 text-[#B77A60]" />
                   Book Now
@@ -206,7 +206,7 @@ export default function Contact({ onOpenBooking }) {
                   href={BUSINESS_INFO.mapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-xs text-[#777B57] hover:text-[#B77A60] font-medium transition-colors"
+                  className="inline-flex items-center text-xs text-[#5D6241] hover:text-[#B77A60] font-medium transition-colors"
                 >
                   <Navigation className="w-3.5 h-3.5 mr-1.5 text-[#B77A60]" />
                   <span>Open in Maps</span>
@@ -228,7 +228,7 @@ export default function Contact({ onOpenBooking }) {
                 />
               </div>
 
-              <div className="pt-1 flex items-center justify-between text-xs text-[#777B57]">
+              <div className="pt-1 flex items-center justify-between text-xs text-[#5D6241]">
                 <div className="flex items-center space-x-1.5">
                   <MapPin className="w-3.5 h-3.5 text-[#B77A60] shrink-0" />
                   <span className="text-[11px] sm:text-xs">
@@ -248,7 +248,7 @@ export default function Contact({ onOpenBooking }) {
             <h3 className="font-serif text-2xl font-normal text-[#40352E] mb-1">
               Appointment Inquiry Form
             </h3>
-            <p className="text-xs text-[#777B57] font-light mb-8">
+            <p className="text-xs text-[#5D6241] font-light mb-8">
               Submit your preferred date and therapy. Our concierge at Ashar Tiara will contact you promptly to finalize your booking.
             </p>
 
@@ -396,7 +396,7 @@ export default function Contact({ onOpenBooking }) {
                   </button>
                 </div>
 
-                <p className="text-[10px] text-[#777B57] text-center">
+                <p className="text-[10px] text-[#5D6241] text-center">
                   *Your contact details remain confidential and are strictly used to coordinate your appointment.
                 </p>
               </form>

@@ -15,7 +15,7 @@ export default function FAQ() {
         
         {/* Section Header */}
         <div className="text-center space-y-3.5 mb-16">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E9DDCC] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#787E65] font-semibold">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E9DDCC] rounded-full text-xs tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             <Sparkles className="w-3.5 h-3.5 text-[#B69A68]" />
             <span>Frequently Asked Questions</span>
           </div>
@@ -62,7 +62,7 @@ export default function FAQ() {
         </div>
 
         {/* Still have questions note */}
-        <div className="mt-12 text-center text-xs text-[#787E65] font-light">
+        <div className="mt-12 text-center text-xs text-[#5D6241] font-light">
           Have an additional question? Feel free to reach out via our contact inquiry page or call our front desk directly.
         </div>
 

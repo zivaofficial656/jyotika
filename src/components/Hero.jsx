@@ -18,7 +18,7 @@ export default function Hero({ onOpenBooking }) {
           <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left">
             
             {/* Boutique Location Pill */}
-            <div className="inline-flex items-center space-x-2.5 px-4 py-1.5 border border-[#E8DFD1] bg-[#F1EADF]/60 rounded-full text-[11px] tracking-[0.25em] uppercase text-[#777B57] shadow-2xs font-semibold">
+            <div className="inline-flex items-center space-x-2.5 px-4 py-1.5 border border-[#E8DFD1] bg-[#F1EADF]/60 rounded-full text-[11px] tracking-[0.25em] uppercase text-[#5D6241] shadow-2xs font-semibold">
               <Sparkles className="w-3.5 h-3.5 text-[#B77A60]" />
               <span>Jyotika Spa • Gandhi Nagar, Thane</span>
             </div>
@@ -56,15 +56,15 @@ export default function Hero({ onOpenBooking }) {
             {/* Subtle Highlights Bar */}
             <div className="pt-8 border-t border-[#E8DFD1] grid grid-cols-1 sm:grid-cols-3 gap-5 text-left">
               <div className="bg-[#FAF9F6] p-4 border border-[#E8DFD1] rounded-xs">
-                <p className="text-[10px] uppercase tracking-wider text-[#777B57] font-semibold">Location</p>
+                <p className="text-[11px] uppercase tracking-wider text-[#5D6241] font-semibold">Location</p>
                 <p className="text-xs font-semibold text-[#40352E] mt-0.5">Ashar Tiara, Gandhi Nagar, Thane</p>
               </div>
               <div className="bg-[#FAF9F6] p-4 border border-[#E8DFD1] rounded-xs">
-                <p className="text-[10px] uppercase tracking-wider text-[#777B57] font-semibold">Sanctuary Suites</p>
+                <p className="text-[11px] uppercase tracking-wider text-[#5D6241] font-semibold">Sanctuary Suites</p>
                 <p className="text-xs font-semibold text-[#40352E] mt-0.5">Private Single & Couple Rooms</p>
               </div>
               <div className="bg-[#FAF9F6] p-4 border border-[#E8DFD1] rounded-xs">
-                <p className="text-[10px] uppercase tracking-wider text-[#777B57] font-semibold">Botanical Care</p>
+                <p className="text-[11px] uppercase tracking-wider text-[#5D6241] font-semibold">Botanical Care</p>
                 <p className="text-xs font-semibold text-[#40352E] mt-0.5">Cold-Pressed Essential Extracts</p>
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function Hero({ onOpenBooking }) {
 
               {/* Top Accent Floating Tag */}
               <div className="hidden sm:block absolute -top-4 -right-4 bg-white/95 border border-[#E8DFD1] px-4 py-2 shadow-md rounded-xs">
-                <p className="text-[10px] tracking-[0.2em] uppercase text-[#777B57] font-semibold">Open Daily 10 AM – 9:30 PM</p>
+                <p className="text-[10px] tracking-[0.2em] uppercase text-[#5D6241] font-semibold">Open Daily 10 AM – 9:30 PM</p>
               </div>
 
             </div>

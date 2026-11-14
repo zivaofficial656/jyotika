@@ -23,6 +23,8 @@ export default function VideoCard({ video, onSelectVideo }) {
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           loading="lazy"
           decoding="async"
+          width="480"
+          height="270"
         />
 
         {/* Dark Vignette Overlay */}
@@ -64,7 +66,7 @@ export default function VideoCard({ video, onSelectVideo }) {
           <span className="group-hover:translate-x-1 transition-transform inline-flex items-center">
             Watch Experience &rarr;
           </span>
-          <span className="text-[11px] text-[#777B57] font-normal lowercase tracking-normal">
+          <span className="text-[11px] text-[#5D6241] font-normal lowercase tracking-normal">
             high definition
           </span>
         </div>

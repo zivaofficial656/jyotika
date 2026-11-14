@@ -50,7 +50,7 @@ export default function AboutPage({ onOpenBooking }) {
       {/* Editorial Header Banner */}
       <div className="bg-[#F1EADF] border-b border-[#E8DFD1] py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             <Sparkles className="w-3.5 h-3.5 text-[#B77A60]" />
             <span>Our Heritage & Vision</span>
           </div>
@@ -93,7 +93,7 @@ export default function AboutPage({ onOpenBooking }) {
               &ldquo;True rejuvenation does not happen in a hurry. It occurs when the senses are quieted, the breath deepens, and skilled hands release stored tension.&rdquo;
             </div>
 
-            <p className="text-xs text-[#777B57]">
+            <p className="text-xs text-[#5D6241]">
               Located at Ashar Tiara Commercial Complex, Gandhi Nagar, Thane. Open daily from 10:00 AM to 09:30 PM.
             </p>
           </div>
@@ -105,9 +105,12 @@ export default function AboutPage({ onOpenBooking }) {
                   src={ABOUT_IMAGES.suite}
                   alt="Jyotika Spa private therapy suite in Thane"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition duration-700"
+                  loading="lazy"
+                  width="300"
+                  height="375"
                 />
               </div>
-              <p className="text-[11px] tracking-widest uppercase text-[#777B57] text-center font-medium">
+              <p className="text-xs tracking-widest uppercase text-[#5D6241] text-center font-medium">
                 Pristine Therapy Suite
               </p>
             </div>
@@ -118,9 +121,12 @@ export default function AboutPage({ onOpenBooking }) {
                   src={GALLERY_IMAGES.suiteCouple}
                   alt="Jyotika Spa couples suite in Thane"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition duration-700"
+                  loading="lazy"
+                  width="300"
+                  height="375"
                 />
               </div>
-              <p className="text-[11px] tracking-widest uppercase text-[#777B57] text-center font-medium">
+              <p className="text-xs tracking-widest uppercase text-[#5D6241] text-center font-medium">
                 Couples Harmony Suite
               </p>
             </div>

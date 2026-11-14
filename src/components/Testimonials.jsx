@@ -34,7 +34,7 @@ export default function Testimonials() {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-3.5 mb-16">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             <Sparkles className="w-3.5 h-3.5 text-[#B77A60]" />
             <span>Guest Reflections</span>
           </div>
@@ -64,7 +64,7 @@ export default function Testimonials() {
                       <Star key={i} className="w-4 h-4 fill-[#B77A60] text-[#B77A60]" />
                     ))}
                   </div>
-                  <span className="text-[10px] tracking-wider uppercase text-[#777B57] font-semibold px-2.5 py-1 bg-[#FAF9F6] border border-[#E8DFD1] rounded-full">
+                  <span className="text-[10px] tracking-wider uppercase text-[#5D6241] font-semibold px-2.5 py-1 bg-[#FAF9F6] border border-[#E8DFD1] rounded-full">
                     {rev.treatment}
                   </span>
                 </div>
@@ -77,7 +77,7 @@ export default function Testimonials() {
               <div className="pt-4 border-t border-[#E8DFD1]/60 flex items-center justify-between text-xs">
                 <div>
                   <p className="font-medium text-[#40352E]">{rev.author}</p>
-                  <p className="text-[10px] text-[#777B57]">{rev.location} • {rev.date}</p>
+                  <p className="text-[10px] text-[#5D6241]">{rev.location} • {rev.date}</p>
                 </div>
                 <MessageSquareQuote className="w-5 h-5 text-[#B77A60] opacity-50 group-hover:opacity-100 transition-opacity" />
               </div>
@@ -87,7 +87,7 @@ export default function Testimonials() {
 
         {/* Policy Notice */}
         <div className="mt-12 p-4 border border-[#E8DFD1] bg-white max-w-xl mx-auto text-center rounded-xs shadow-2xs">
-          <p className="text-xs text-[#777B57] font-light">
+          <p className="text-xs text-[#5D6241] font-light">
             Guest reviews are shared with permission following in-person visits to Jyotika Spa in Thane. We never generate artificial customer identities.
           </p>
         </div>

@@ -32,7 +32,7 @@ export default function About() {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-3.5 mb-16">
-          <p className="text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <p className="text-xs tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             Boutique Philosophy
           </p>
           {/* Exact Headline as requested: "A Pause From the Everyday." */}
@@ -63,15 +63,15 @@ export default function About() {
               </div>
               <div className="p-4 bg-[#F1EADF]/40 border-t border-[#E8DFD1] flex items-center justify-between text-xs text-[#5A4E46]">
                 <span className="font-serif italic text-sm text-[#40352E]">1st Floor, Ashar Tiara Complex</span>
-                <span className="text-[10px] tracking-widest uppercase text-[#777B57] font-semibold">Thane, Maharashtra</span>
+                <span className="text-[11px] tracking-widest uppercase text-[#5D6241] font-semibold">Thane, Maharashtra</span>
               </div>
             </div>
           </div>
 
           {/* Elegant Story Narrative */}
           <div className="lg:col-span-6 space-y-6 text-[#5A4E46] font-light leading-relaxed">
-            <div className="inline-flex items-center space-x-2 px-3 py-1 bg-white border border-[#E8DFD1] text-[10px] tracking-widest uppercase text-[#B77A60] font-semibold rounded-full">
-              <Sparkles className="w-3 h-3 text-[#B77A60]" />
+            <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] text-[11px] tracking-widest uppercase text-[#A35D43] font-semibold rounded-full shadow-2xs">
+              <Sparkles className="w-3.5 h-3.5 text-[#B77A60]" />
               <span>A Welcoming Wellness Destination</span>
             </div>
 
@@ -91,7 +91,7 @@ export default function About() {
               &ldquo;We have created a welcoming haven where every detail—from the warmth of our oils to the quietude of our private suites—is designed to help you regain your natural balance.&rdquo;
             </div>
 
-            <p className="text-xs text-[#777B57]">
+            <p className="text-xs text-[#5D6241]">
               Visit us at {BUSINESS_INFO.address.full}.
             </p>
           </div>

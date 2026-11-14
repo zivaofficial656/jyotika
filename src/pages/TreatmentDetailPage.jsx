@@ -19,7 +19,7 @@ export default function TreatmentDetailPage({ onOpenBooking }) {
       {/* Breadcrumb Navigation */}
       <div className="bg-[#F1EADF]/40 border-b border-[#E8DFD1] py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center space-x-2 text-xs text-[#777B57]">
+          <div className="flex items-center space-x-2 text-xs text-[#5D6241]">
             <Link to="/" className="hover:text-[#40352E] transition-colors">Home</Link>
             <span>/</span>
             <Link to="/services" className="hover:text-[#40352E] transition-colors">Treatments</Link>
@@ -35,7 +35,7 @@ export default function TreatmentDetailPage({ onOpenBooking }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-[#F1EADF] border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.22em] uppercase text-[#777B57] font-semibold">
+              <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-[#F1EADF] border border-[#E8DFD1] rounded-full text-xs tracking-[0.22em] uppercase text-[#5D6241] font-semibold">
                 <Sparkles className="w-3.5 h-3.5 text-[#B77A60]" />
                 <span>Signature Bodywork • Thane</span>
               </div>
@@ -65,7 +65,7 @@ export default function TreatmentDetailPage({ onOpenBooking }) {
                 </div>
 
                 {service.pressure && (
-                  <div className="inline-flex items-center space-x-2 px-4 py-2 bg-[#F1EADF]/60 border border-[#E8DFD1] rounded-xs text-xs text-[#777B57] font-medium">
+                  <div className="inline-flex items-center space-x-2 px-4 py-2 bg-[#F1EADF]/60 border border-[#E8DFD1] rounded-xs text-xs text-[#5D6241] font-medium">
                     <span>{service.pressure}</span>
                   </div>
                 )}
@@ -76,7 +76,7 @@ export default function TreatmentDetailPage({ onOpenBooking }) {
                 <button
                   type="button"
                   onClick={() => onOpenBooking(service.name)}
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-xs tracking-[0.18em] uppercase font-medium text-white bg-[#40352E] hover:bg-[#B77A60] transition-all rounded-xs shadow-sm cursor-pointer border border-[#40352E]"
+                  className="w-full sm:w-auto min-h-[44px] inline-flex items-center justify-center px-8 py-3.5 text-xs tracking-[0.18em] uppercase font-medium text-white bg-[#40352E] hover:bg-[#B77A60] transition-all rounded-xs shadow-sm cursor-pointer border border-[#40352E]"
                 >
                   <Calendar className="w-3.5 h-3.5 mr-2 text-[#E8DFD1]" />
                   Reserve This Treatment
@@ -84,7 +84,7 @@ export default function TreatmentDetailPage({ onOpenBooking }) {
 
                 <Link
                   to="/services"
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 text-xs tracking-[0.16em] uppercase font-medium text-[#40352E] bg-white hover:bg-[#F1EADF] border border-[#E8DFD1] rounded-xs transition-colors"
+                  className="w-full sm:w-auto min-h-[44px] inline-flex items-center justify-center px-6 py-3.5 text-xs tracking-[0.16em] uppercase font-medium text-[#40352E] bg-white hover:bg-[#F1EADF] border border-[#E8DFD1] rounded-xs transition-colors"
                 >
                   <ArrowLeft className="w-3.5 h-3.5 mr-2 text-[#B77A60]" />
                   Back to All Treatments
@@ -100,11 +100,14 @@ export default function TreatmentDetailPage({ onOpenBooking }) {
                     src={service.image}
                     alt={`${service.name} at Jyotika Spa Thane`}
                     className="w-full h-full object-cover object-center"
+                    loading="lazy"
+                    width="600"
+                    height="450"
                   />
                 </div>
                 <div className="p-4 text-center">
                   <p className="font-serif text-xl text-[#40352E]">{service.name}</p>
-                  <p className="text-[11px] text-[#777B57] uppercase tracking-wider mt-0.5">Ashar Tiara Complex, Thane</p>
+                  <p className="text-xs text-[#5D6241] uppercase tracking-wider mt-0.5">Ashar Tiara Complex, Thane</p>
                 </div>
               </div>
             </div>
@@ -148,7 +151,7 @@ export default function TreatmentDetailPage({ onOpenBooking }) {
           <div className="lg:col-span-5 space-y-6">
             
             <div className="bg-white border border-[#E8DFD1] p-8 rounded-sm shadow-2xs space-y-4">
-              <div className="flex items-center space-x-2 text-[#777B57]">
+              <div className="flex items-center space-x-2 text-[#5D6241]">
                 <HeartHandshake className="w-5 h-5 text-[#B77A60]" />
                 <h3 className="font-serif text-xl text-[#40352E]">Personalized Touch</h3>
               </div>
@@ -158,7 +161,7 @@ export default function TreatmentDetailPage({ onOpenBooking }) {
             </div>
 
             <div className="bg-white border border-[#E8DFD1] p-8 rounded-sm shadow-2xs space-y-4">
-              <div className="flex items-center space-x-2 text-[#777B57]">
+              <div className="flex items-center space-x-2 text-[#5D6241]">
                 <ShieldCheck className="w-5 h-5 text-[#B77A60]" />
                 <h3 className="font-serif text-xl text-[#40352E]">Sanctuary Hygiene</h3>
               </div>
@@ -202,12 +205,15 @@ export default function TreatmentDetailPage({ onOpenBooking }) {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {relatedServices.map((rel) => (
-              <div key={rel.id} className="bg-white border border-[#E8DFD1] rounded-sm overflow-hidden flex flex-col justify-between h-full group">
+              <div key={rel.id} className="bg-white border border-[#E8DFD1] rounded-sm overflow-hidden flex flex-col justify-between h-full group shadow-2xs hover:shadow-lg transition-all">
                 <div className="relative aspect-[16/10] overflow-hidden bg-[#E8DFD1]/20">
                   <img
                     src={rel.image}
                     alt={rel.name}
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                    width="400"
+                    height="250"
                   />
                 </div>
                 <div className="p-6 space-y-2">
@@ -217,7 +223,7 @@ export default function TreatmentDetailPage({ onOpenBooking }) {
                 <div className="p-6 pt-0">
                   <Link
                     to={`/treatments/${rel.slug}`}
-                    className="block text-center px-4 py-2.5 text-[11px] uppercase tracking-wider bg-[#FAF9F6] hover:bg-[#F1EADF] border border-[#E8DFD1] text-[#40352E] rounded-xs transition-colors"
+                    className="min-h-[44px] flex items-center justify-center text-center px-4 py-2.5 text-xs uppercase tracking-wider bg-[#FAF9F6] hover:bg-[#F1EADF] border border-[#E8DFD1] text-[#40352E] rounded-xs transition-colors"
                   >
                     Explore {rel.name}
                   </Link>

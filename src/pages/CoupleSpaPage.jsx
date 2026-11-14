@@ -74,7 +74,7 @@ export default function CoupleSpaPage({ onOpenBooking }) {
       {/* Header Banner */}
       <div className="bg-[#F1EADF] border-b border-[#E8DFD1] py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             <Heart className="w-3.5 h-3.5 text-[#B77A60]" />
             <span>Shared Sanctuary Experience</span>
           </div>
@@ -119,11 +119,14 @@ export default function CoupleSpaPage({ onOpenBooking }) {
                 src={GALLERY_IMAGES.suiteCouple}
                 alt="Jyotika Spa private couple therapy room in Thane"
                 className="w-full h-full object-cover object-center"
+                loading="lazy"
+                width="600"
+                height="450"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 hidden sm:block p-4 bg-white border border-[#E8DFD1] shadow-lg rounded-sm max-w-xs text-xs space-y-1">
               <p className="font-serif text-sm font-medium text-[#40352E]">Private Dual Treatment Suite</p>
-              <p className="text-[11px] text-[#777B57] uppercase tracking-wider">
+              <p className="text-xs text-[#5D6241] uppercase tracking-wider">
                 Ashar Tiara Complex • Thane
               </p>
             </div>
@@ -151,11 +154,13 @@ export default function CoupleSpaPage({ onOpenBooking }) {
                       alt={ritual.title}
                       className="w-full h-full object-cover object-center group-hover:scale-105 transition duration-700"
                       loading="lazy"
+                      width="400"
+                      height="250"
                     />
                   </div>
 
                   <div className="p-6 sm:p-8 space-y-4">
-                    <div className="flex items-center justify-between text-xs text-[#777B57]">
+                    <div className="flex items-center justify-between text-xs text-[#5D6241]">
                       <span className="uppercase tracking-wider font-medium">{ritual.duration}</span>
                       <span className="italic">{ritual.pricing}</span>
                     </div>
@@ -169,7 +174,7 @@ export default function CoupleSpaPage({ onOpenBooking }) {
                     </p>
 
                     <div className="pt-2 border-t border-[#E8DFD1] space-y-2">
-                      <p className="text-xs uppercase tracking-wider text-[#B77A60] font-medium">Ritual Includes:</p>
+                      <p className="text-xs uppercase tracking-wider text-[#A35D43] font-medium">Ritual Includes:</p>
                       <ul className="space-y-1.5 text-xs text-[#595048] font-light">
                         {ritual.inclusions.map((inc, i) => (
                           <li key={i} className="flex items-start space-x-2">
@@ -185,7 +190,7 @@ export default function CoupleSpaPage({ onOpenBooking }) {
                 <div className="p-6 sm:p-8 pt-0">
                   <button
                     onClick={() => onOpenBooking ? onOpenBooking({ serviceName: ritual.title }) : window.location.assign('/booking')}
-                    className="w-full py-3 bg-[#F1EADF] hover:bg-[#B77A60] hover:text-white text-[#40352E] font-medium text-xs tracking-widest uppercase transition-all duration-300 rounded-sm border border-[#E8DFD1] flex items-center justify-center space-x-2"
+                    className="w-full min-h-[44px] py-3 bg-[#F1EADF] hover:bg-[#B77A60] hover:text-white text-[#40352E] font-medium text-xs tracking-widest uppercase transition-all duration-300 rounded-sm border border-[#E8DFD1] flex items-center justify-center space-x-2 cursor-pointer active:scale-98"
                   >
                     <Calendar className="w-4 h-4" />
                     <span>Inquire for Couples</span>

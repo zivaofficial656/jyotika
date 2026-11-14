@@ -59,7 +59,7 @@ export default function GalleryPage() {
       {/* Header Banner */}
       <div className="bg-[#F1EADF] border-b border-[#E8DFD1] py-14 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-white border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             <Sparkles className="w-3.5 h-3.5 text-[#B77A60]" />
             <span>Visual Exploration</span>
           </div>
@@ -136,8 +136,17 @@ export default function GalleryPage() {
               {filteredPhotos.map((item) => (
                 <div
                   key={item.id}
+                  role="button"
+                  tabIndex={0}
+                  aria-label={`View photo: ${item.title}`}
                   onClick={() => setLightboxItem(item)}
-                  className="group relative aspect-[4/3] bg-white border border-[#E8DFD1] overflow-hidden cursor-pointer rounded-sm shadow-2xs hover:shadow-xl transition-all duration-500"
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      setLightboxItem(item);
+                    }
+                  }}
+                  className="group relative aspect-[4/3] bg-white border border-[#E8DFD1] overflow-hidden cursor-pointer rounded-sm shadow-2xs hover:shadow-xl transition-all duration-500 focus:outline-none focus:ring-2 focus:ring-[#B77A60]"
                 >
                   <img
                     src={item.image}
@@ -145,6 +154,8 @@ export default function GalleryPage() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"
+                    width="480"
+                    height="360"
                   />
                   
                   {/* Boutique Hover Overlay */}

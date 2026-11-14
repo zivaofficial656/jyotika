@@ -25,7 +25,7 @@ export default function Services({ onSelectServiceForBooking }) {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-[#F1EADF] border border-[#E8DFD1] rounded-full text-[11px] tracking-[0.25em] uppercase text-[#777B57] font-semibold">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 bg-[#F1EADF] border border-[#E8DFD1] rounded-full text-xs tracking-[0.25em] uppercase text-[#5D6241] font-semibold">
             <Sparkles className="w-3.5 h-3.5 text-[#B77A60]" />
             <span>Signature Treatments</span>
           </div>
@@ -59,14 +59,14 @@ export default function Services({ onSelectServiceForBooking }) {
             <p className="text-xs font-semibold text-[#40352E] uppercase tracking-wider">
               Transparent Pricing Consultation
             </p>
-            <p className="text-xs text-[#777B57] font-light">
+            <p className="text-xs text-[#5D6241] font-light">
               Treatment durations and customized package pricing are confirmed with our concierge prior to your appointment.
             </p>
           </div>
 
           <Link
             to="/services"
-            className="inline-flex items-center justify-center px-6 py-3 text-xs tracking-[0.16em] uppercase font-medium text-[#40352E] bg-white hover:bg-[#F1EADF] border border-[#E8DFD1] hover:border-[#B77A60] transition-all rounded-xs shadow-2xs group shrink-0"
+            className="min-h-[44px] inline-flex items-center justify-center px-6 py-3 text-xs tracking-[0.16em] uppercase font-medium text-[#40352E] bg-white hover:bg-[#F1EADF] border border-[#E8DFD1] hover:border-[#B77A60] transition-all rounded-xs shadow-2xs group shrink-0"
           >
             <span>View All Treatments</span>
             <ArrowRight className="w-4 h-4 ml-2 text-[#B77A60] group-hover:translate-x-1 transition-transform" />
