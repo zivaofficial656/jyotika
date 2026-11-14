@@ -88,7 +88,7 @@ export default function App() {
           <Route path="/booking" element={<BookingPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
-          <Route path="*" element={<NotFoundPage onOpenBooking={handleOpenBooking} />} />
+          {/* <Route path="*" element={<NotFoundPage onOpenBooking={handleOpenBooking} />} /> */}
 
         </Routes>
       </Suspense>
