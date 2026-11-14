@@ -121,7 +121,7 @@ const SEO_ROUTES = {
     canonical: `${BASE_URL}/booking`,
     schemaType: 'WebPage',
     breadcrumbName: 'Book Appointment',
-    noindex: true,
+    indexable: true,
   },
   '/privacy': {
     title: 'Privacy Policy | Jyotika Spa Thane',
@@ -130,7 +130,7 @@ const SEO_ROUTES = {
     canonical: `${BASE_URL}/privacy`,
     schemaType: 'WebPage',
     breadcrumbName: 'Privacy Policy',
-    noindex: true,
+    indexable: true,
   },
   '/terms': {
     title: 'Terms & Conditions | Jyotika Spa Thane',
@@ -139,7 +139,7 @@ const SEO_ROUTES = {
     canonical: `${BASE_URL}/terms`,
     schemaType: 'WebPage',
     breadcrumbName: 'Terms & Conditions',
-    noindex: true,
+    indexable: true,
   },
 };
 

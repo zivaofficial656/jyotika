@@ -2,8 +2,5 @@
 User-agent: *
 Allow: /
 
-# Prevent indexing of utility 404 handler
-Disallow: /404.html
-
 # XML Sitemap
 Sitemap: https://jyotika.online/sitemap.xml
